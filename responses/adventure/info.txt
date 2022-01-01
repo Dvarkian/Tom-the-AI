@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Willie Crowther's Collossal Cave Adventure."
+}
