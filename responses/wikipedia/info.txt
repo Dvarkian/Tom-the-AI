@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "The summerised sum of all human knowledge."
+}

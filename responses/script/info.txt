@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Snippets of code from StackOverflow using howdoi."
+}

@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Determines the probability of any arbitrary scenario."
+}

@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Multi-choice trivia questions."
+}

@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Solutions to complex algebra using SymPy."
+}

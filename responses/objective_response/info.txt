@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Objective answers from anywhere on the web."
+}
