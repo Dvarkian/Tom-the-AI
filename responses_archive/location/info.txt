@@ -1,0 +1,4 @@
+{
+	"author": "Murray Jones",
+	"descr": "Linux commands from Pickhardt's 'Betty'."
+}
