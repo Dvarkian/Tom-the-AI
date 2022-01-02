@@ -7,7 +7,7 @@ Tom is an open source AI desktop assistant for Linux systems, built using a seri
 
 Tom uses natural language processing to determine which response module is best suited to generate a response for each input, thus avoiding the need for precise syntax.
 
-![Tom the AI](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/tomFace_original.gif)
+![Tom the AI](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/screenshot1.png)
 
 By Analogy
 ----------
@@ -60,9 +60,11 @@ Examples
 
 Tom generates outputs to any input by using natural language processing to determine the most suitable response module from which to source the reply.
 
-Give Tom natural language input, either via voice recognition or text input, for instance `Hey Tom, what is petrichor?`, and he'll respond in the most appropriate way. Note that the 'Hey Tom' activation phrase is only required of voice inputs.
+Give Tom natural language input, either via voice recognition or text input, for instance `Hey Tom, what is petrichor?`, and he'll respond in the most appropriate way. Note that the 'Hey Tom' activation phrase is only required of voice inputs. Passive voice input can be activated by double clicking the microphone button. Single click to use voice recognition for a single input.
 
-The following is a non-exhaustive list of things you can do:
+![Tom the AI](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/tomFace_original.gif)
+
+The following is a non-exhaustive list of Tom's capabilities:
 
     Objective Response (From anywhere on the internet):
     ~> Hey Tom, what is petrichor?
