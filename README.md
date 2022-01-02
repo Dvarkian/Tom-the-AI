@@ -65,46 +65,57 @@ Give Tom natural language input, either via voice recognition or text input, for
 
 The following is a non-exhaustive list of Tom's capabilities:
 
-    Objective Response (From anywhere on the internet):
+*Objective Response (From anywhere on the internet):*
+    
     ~> Hey Tom, what is petrichor?
     According to en.wikipedia.org... Petrichor is the earthy scent produced when rain falls on dry soil. The word is constructed from the Greek petra, "rock", or petros, "stone", and ichor, the fluid that flows in the veins of the gods in Greek mythology.
 
-    Subjective Response (From Cleverbot):
+*Subjective Response (From Cleverbot):*
+    
     ~> Hey Tom, I'm in an optimistic mood.
     I'm not sure if this is a good thing or not.
 
-    Emotions (Using sentiment analysis + NLTK chatbots):
+*Emotions (Using sentiment analysis + NLTK chatbots):*
+    
     ~> Hey Tom, you are a brilliant individual!
     I am but one, you are but one more.
     ~> Hey Tom, thou art a fool.
     Become more interesting before I die of fatal boredom.
 
-    Fact Memory & Recall:
+*Fact Memory & Recall:*
+    
     ~> Hey Tom, the answer to life, the universe, and everything is 42.
     Ok.
     ~> Hey Tom, what is the answer to life, the universe, and everything?.
     The answer to life, the universe, and everything is 42.
 
-    Playing music (From device or web, includes UI controls for the former):
+
+*Playing music (From device or web, includes UI controls for the former):*
+
     ~> Hey Tom, play up the shard.
     Playing /home/murray/Music/Dr Who/Up The Shard.webm.
     ~> Hey Tom, stop the music.
     Media stopped.
     *NOTE: File names do not have to match exactly.*
 
+*Opening Files:*
+
     ~> Hey Tom, open my English essay.
     Alright.
     *NOTE: File names do not have to match exactly.*
 
-    Opening websites:
+*Opening websites:*
+    
     ~> Hey Tom, open Reddit.
     Alright.
 
-    Jokes (From PyJokes):
+*Jokes (From PyJokes):*
+    
     ~> Hey Tom, tell me a joke.
     I went to a street where the houses were numbered 8k, 16k, 32k, 64k, 128k, 256k and 512k. It was a trip down Memory Lane.
 
-    Trivia:
+*Trivia:*
+    
     ~> Hey Tom, ask me a trivia question.
     Question: What is "Sealed crustless sandwich"?
     1) The part of Yellowstone National Park in Idaho, where any crime can technically be committed without punishment – but don't tempt fate!
@@ -114,27 +125,33 @@ The following is a non-exhaustive list of Tom's capabilities:
     ~> 4.
     Correct!
 
-    Colossal Cave Adventure (Willie Crowther's ADVENT-350):
+*Colossal Cave Adventure (Willie Crowther's ADVENT-350):*
+    
     ~> Hey Tom, let's go on an adventure!
     Welcome to adventure!! would you like instructions?
 
-    Fun facts:
+*Fun facts:*
+    
     ~> Hey Tom, make me smarter.
     Spices were not used to mask the flavor of rotting meat before refrigeration. Spices were an expensive luxury item; those who could afford them could afford good meat, and there are no contemporaneous documents calling for spices to disguise the taste of bad meat.
 
-    Dice Rolls (great for D&D):
+*Dice Rolls (great for D&D):*
+    
     ~> Hey Tom, roll me a d20.
     I rolled a 14.
 
-    Word generation (great for Articulate)
+*Word generation (great for Articulate)*
+    
     ~> Hey Tom, give me a random action word.
     Your word is 'winning'.
 
-    Complex Mathematics (using SymPy):
+*Complex Mathematics (using SymPy):*
+    
     ~> Hey Tom, integrate (tan(x))^1/2
     ∫f(x) = -ln(cos(x))/2 + c
 
-    Code generation (using howdoi):
+*Code generation (using howdoi):*
+    
     ~> Hey Tom, write a hello world script in C++.
     #include <\iostream>
     int main()
@@ -143,7 +160,8 @@ The following is a non-exhaustive list of Tom's capabilities:
     return 0;
     }
 
-    Most of Betty's functionality (From https://github.com/pickhardt/betty):
+*Most of Betty's functionality (From https://github.com/pickhardt/betty):*
+
     ~> Hey Tom, what time is it?
     Running date +"%r (%T)" ...
     02:34:46 PM (14:34:46).
