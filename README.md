@@ -48,14 +48,13 @@ Next, we need to download the required NLTK libraries by running the following c
 Go ahead and run `python3.9 ~/Tom-the-AI/tom.py`. Tom will boot up, and after a minute or so of loading, you'll be ready to go! If you feel inclined, go ahead and make a desktop launcher of this command, link Tom into your Application Menu, or create a dock shortcut.
 
 
-
 Mission
 -------
 
 The mission of Tom is to provide an open source compound AI for which anyone can program and contribute response modules, expanding Tom's capabilities to create a useful and entertaining artificial intelligence software.
 
 
-Examples
+Features
 --------
 
 Tom generates outputs to any input by using natural language processing to determine the most suitable response module from which to source the reply.
@@ -223,17 +222,16 @@ New response modules & capabilities to look forward to in future versions of Tom
 Features I'm not currently planning to include in Tom, but that I'll consider adding if enough people are interested:
 
  - Windows support.
+ - Easier discord setup (more on this below). 
 
+**Versioning:** Releases will follow a [semantic versioning format](http://semver.org/): `<major>.<minor>.<patch>`
 
+Discord Bot
+-----------
 
-Versioning
-----------
+Tom is set up to run as a locally hosted Discord bot. Unfortunately I am unable to host this bot full time, and I am yet to find a freely availiable web host for Discord bots. Therefore, to use this functionality, you will need to set up your own Discord Bot at the [Discord Developer Portal](https://discord.com/developers), and insert your bot token and guild name at the indicated positions around line 310 in `frontend.py`. 
 
-Releases will follow a semantic versioning format:
-
-`<major>.<minor>.<patch>`
-
-For more information on SemVer, visit [http://semver.org/](http://semver.org/).
+If anyone has a server and would like to host Tom as a full time Discord bot, by all means go ahead. All the necessary programming is already complete.
 
 
 License
