@@ -244,12 +244,19 @@ Features I'm not currently planning to include in Tom, but that I'll consider ad
 
 **Versioning:** Releases will follow a [semantic versioning format](http://semver.org/): `<major>.<minor>.<patch>`
 
+
 Discord Bot
 -----------
 
 Tom is set up to run as a locally hosted Discord bot. Unfortunately I am unable to host this bot full time, and I am yet to find a freely availiable web host for Discord bots. Therefore, to use this functionality, you will need to set up your own Discord Bot at the [Discord Developer Portal](https://discord.com/developers), and insert your bot token and guild name at the indicated positions around line 310 in `frontend.py`. 
 
 If anyone has a server and would like to host Tom as a full time Discord bot, by all means go ahead. All the necessary programming is already complete.
+
+
+Final Notes
+-----------
+
+I started developing Tom the AI in early 2021 as a major work for the HSC Software course. Since submitting the assigment, and getting full marks :), I have kept developing Tom over the past year as a hobby - a bit of fun to take my mind off lockdowns and to have a break in between studying for HSC exams. Tom is not perfect, but I think it's pretty cool. I hope that as more people contribute and help to develop response modules, Tom will grow to become a truly amazing piece of software that everyone can enjoy.
 
 
 License
