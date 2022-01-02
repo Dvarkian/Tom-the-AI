@@ -45,7 +45,7 @@ Next, we need to download the required NLTK libraries by running the following c
 
 **Step 5 - Running Tom:** 
 
-Go ahead and run `python3.9 ~/Tom-the-AI/tom.py`. Tom will boot up, and after a minute or so of loading, you'll be ready to go! If you feel inclined, go ahead and make a desktop launcher of this command, link Tom into your Application Menu, or create a dock shortcut.
+Go ahead and run `python3.9 ~/Tom-the-AI/frontend.py`. Tom will boot up, and after a minute or so of loading, you'll be ready to go! If you feel inclined, go ahead and make a desktop launcher of this command, link Tom into your Application Menu, or create a dock shortcut.
 
 
 Mission
