@@ -1,7 +1,7 @@
 Tom the AI (v1.0)
 =========================
  
-**WARNING: This software is not yet ready to use, I'm still setting up the GitHub repository. Should be ready in a few days.**
+**WARNING: This software is not yet ready to use, I'm still setting up the GitHub repository.. Should be ready in a few days.**
 
 Tom is an open source AI desktop assistant for Linux systems, built using a series of independent response modules to generate replies to any input. 
 
