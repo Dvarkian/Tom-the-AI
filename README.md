@@ -7,7 +7,7 @@ Tom is an open source AI desktop assistant for Linux systems, built using a seri
 
 Tom uses natural language processing to determine which response module is best suited to generate a response for each input, thus avoiding the need for precise syntax.
 
-![UI Screenshat](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/screenshot1.png)
+![UI Screenshot](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/screenshot1.png)
 
 By Analogy
 ----------
