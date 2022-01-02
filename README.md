@@ -1,4 +1,4 @@
-Tom the AI (version 1.0)
+Tom the AI (v1.0)
 =========================
  
 **WARNING: This software is not yet ready to use, I'm still setting up the GitHub repository. Should be ready in a few days.**
