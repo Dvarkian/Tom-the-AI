@@ -20,6 +20,9 @@ def mathSolve(inp):
 
     inp = inp.lower()
 
+    if "solve" in inp and "=" not in inp:
+        inp = inp.replace("solve", "solve x =")
+
     inp = subSyns(inp, ["minus"], "-")
     inp = subSyns(inp, ["plus"], "+")
     inp = subSyns(inp, ["times", "multiplied by"], "*")
@@ -39,7 +42,6 @@ def mathSolve(inp):
     inp = subSyns(inp, ["derivative of", "differentiate"], "diff")
     inp = subSyns(inp, ["integral of", "integral", "integarte", "intagrate"], "integrate")
 
-
     if "=" in inp:
         
         for i in range(0, len(inp)):
@@ -49,7 +51,6 @@ def mathSolve(inp):
                 
         if "solve" not in inp:
             inp = "solve " + inp
-
 
     opened = 0
     closed = 0
@@ -115,6 +116,7 @@ def mathSolve(inp):
 
     try: 
         out = eval(str(inp))
+        print(out)
     except NotImplementedError:
         out = "No solutions."
     except Exception as e:
@@ -136,7 +138,7 @@ def mathSolve(inp):
     if "diff" in inp:
         subj = "dy/dx"
         
-    if "integrate" in inp:
+    if "integr" in inp:
         if "x" in inp:
             subj = "∫f(x)"
         elif "y" not in inp:
@@ -146,7 +148,7 @@ def mathSolve(inp):
 
         out = out + " + c"
     
-    out = subj + " = " + str(out)
+    out = subj + " = " + str(out)[:6].strip("0").strip(".")
 
     return out
 
