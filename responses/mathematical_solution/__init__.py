@@ -62,7 +62,11 @@ def mathSolve(inp):
 
     last = "alpha"
 
-    for i in range(0, len(inp)):
+    i = 0
+
+    while i < len(inp):
+
+        #print("    ", inp[i], last)
         
         if inp[i].isalpha() and opened > 0:
             exec(str(str(inp[i]) + " = Symbol(\'" + str(inp[i]) + "\')"))
@@ -88,8 +92,10 @@ def mathSolve(inp):
             last = "alpha"
 
         elif inp[i].isdigit():
+            #print("Dig", inp[i])
             last = "digit"
         else:
+            #print("?", inp[i])
             last = "?"
             
         if inp[i] == " " and not opened:
@@ -103,7 +109,9 @@ def mathSolve(inp):
         if inp[i] == "(":
             opened += 1
         elif inp[i] == ")":
-            closed += 1    
+            closed += 1
+
+        i += 1
 
 
     while len(inp.split("("))-1 > len(inp.split(")"))-1:
