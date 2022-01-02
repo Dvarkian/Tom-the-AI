@@ -7,6 +7,8 @@ Tom uses natural language processing to determine which response module is best 
 
 ![UI Screenshot](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/screenshot1.png)
 
+Note: Tom is tested on Ubuntu 22.04. It *should* work fine on other Linux systems, but some minor tweaking may be required to the method of installling dependencies.
+
 By Analogy
 ----------
 
