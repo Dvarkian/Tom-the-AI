@@ -6,7 +6,7 @@ dir_ = "/".join(__file__.split("/")[:-1]) + "/"
 def respond(inp):
     betty = dir_ + "main.rb"
 
-    if "version" in inp.lower() or "speak" in inp.lower():
+    if "version" in inp.lower() or "speak" in inp.lower() or "you" in inp.lower() or "i " in inp.lower():
         return False
 
     cmd = [betty, inp]
