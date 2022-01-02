@@ -147,8 +147,15 @@ def mathSolve(inp):
             subj = "∫" + subj
 
         out = out + " + c"
+
     
-    out = subj + " = " + str(out)[:6].strip("0").strip(".")
+    
+    out = subj + " = " + str(out)
+
+    if "." in out:
+        out = out[:6]
+
+    out = out.strip("0").strip(".")
 
     return out
 
