@@ -93,7 +93,7 @@ def objectiveResponse(inp): # Get webernet results for a given input
                     " lisccenced ", "creative commons", "talk page", "subscribe", "click here", "for other uses", "see the tip below",
                     "the full article", "photograph of ", "reference", "no.", "register", "\u200b", "\\u200b", ".com", "/ \'", "This page ",
                     "promotional", "earn money", "product", "cover of", "not to be confused with", "1.2.", "1.1.", "1.3.", "login",
-                    "acknowledge", "\ufeff", "show ", " style manual "]
+                    "acknowledge", "\ufeff", "show ", " style manual ", "&gt"]
 
             killed = False # Flag to determine of a killword has been found.
 
