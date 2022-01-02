@@ -1,4 +1,4 @@
 {
 	"author": "Murray Jones",
-	"descr": "Linux commands from Pickhardt's 'Betty'."
+	"descr": "Simple location data, unreliable on mobile notworks."
 }
