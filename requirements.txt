@@ -15,6 +15,8 @@ google_api_python_client==2.33.0
 google_search>=1.1.1
 ignite==1.1.0
 interact==0.2
+itertools
+json
 monotonic==1.6
 multiprocessing
 nltk>=3.5
@@ -31,6 +33,7 @@ pyjokes>=0.6.0
 PyQt5==5.15.6
 PySimpleGUI>=4.55.1
 pytorch_ignite==0.4.6
+readline
 regex
 requests>=2.22.0
 scikit_learn==1.0.2
@@ -46,3 +49,4 @@ transformers>=4.9.2
 urllib3>=1.25.3
 vlc
 word2number>=1.1
+wikipedia

@@ -26,7 +26,7 @@ Update apt package repositories using `sudo apt update` to ensure that the apt p
 
 First, install python by running `sudo apt install python3.9` in a terminal. Tom is tested on python 3.9, but any newer version should (probably) also work just fine.
 
-Next, install the latest version of VLC Media player using `sudo apt install vlc`.
+Next, install the latest version of VLC Media player using `sudo apt install vlc`, then install howdoi with `sudo apt install howdoi`.
 
 **Step 3 - Download Tom**: 
 
@@ -242,7 +242,7 @@ Features I'm not currently planning to include in Tom, but that I'll consider ad
  - Windows support.
  - Easier discord setup (more on this below). 
  - Command line interface.
- 
+
 
 **Versioning:** Releases will follow a [semantic versioning format](http://semver.org/): `<major>.<minor>.<patch>`
 
