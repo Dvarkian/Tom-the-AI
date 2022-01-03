@@ -241,6 +241,8 @@ Features I'm not currently planning to include in Tom, but that I'll consider ad
 
  - Windows support.
  - Easier discord setup (more on this below). 
+ - Command line interface.
+ 
 
 **Versioning:** Releases will follow a [semantic versioning format](http://semver.org/): `<major>.<minor>.<patch>`
 

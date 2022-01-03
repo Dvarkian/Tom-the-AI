@@ -1,5 +1,6 @@
 apex==0.9.10dev
 AppKit==0.2.8
+argparse
 asyncio
 beautifulsoup4>=4.10.0
 better_profanity>=0.7.0
