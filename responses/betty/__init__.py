@@ -6,8 +6,11 @@ dir_ = "/".join(__file__.split("/")[:-1]) + "/"
 def respond(inp):
     betty = dir_ + "main.rb"
 
-    if "version" in inp.lower() or "speak" in inp.lower() or "you" in inp.lower() or "i " in inp.lower():
-        return False
+    inp = inp.lower()
+
+    for p in ["version", "speak", "you", "i ", " me", "my "]:
+        if p in inp:
+            return False
 
     cmd = [betty, inp]
     #cmd = cmd.split(" ")
