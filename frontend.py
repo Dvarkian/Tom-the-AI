@@ -221,7 +221,6 @@ loadingWindow["-LOAD-TEXT-"].update("Connecting to the Internet ...")
 loadingWindow.refresh()
 
 while 1: # Loop to check we are connected to the internet.
-    print("Checking Internet connection.")
     
     try: # Try a simple web request.
         request = requests.get("https://www.google.com", timeout=10)
@@ -245,6 +244,8 @@ while 1: # Loop to check we are connected to the internet.
         else:
             continue
 
+loadingWindow["-LOAD-TEXT-"].update("Importing Modules ...")
+loadingWindow.refresh()
 
 # Import PyQt5 with PyQt4 backwards compatibility, used for system tray icon.
 import PyQt5
@@ -253,7 +254,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
-plyer = incur("plyer") # A remarkably versetile module, so far we're only using it for sending desktop notifications.
+import plyer # A remarkably versetile module, so far we're only using it for sending desktop notifications.
 
 # Give a test notification during loading.
 plyer.notification.notify(title="Hello!", message="Did you know: Tom can use these notifications to run in the backgroud " +
@@ -273,7 +274,7 @@ from multiprocessing import Process, Queue # Used to run system tray icon in par
 
 
 try: # Import media player
-    vlc = incur("vlc")
+    import vlc
     from vlc import Instance # Possibly superfluous.
     
 except FileNotFoundError: # VLC media player is not installed.
@@ -1102,7 +1103,7 @@ def loadMainWindow(): # Loads the main program window.
 
 # Start loading the user interface.
 
-#loadingWindow["-LOAD-TEXT-"].update("Loading interface...")
+loadingWindow["-LOAD-TEXT-"].update("Loading interface...")
 loadingWindow.refresh()
 
 notified = False
@@ -1663,11 +1664,17 @@ def startTrayIcon(): # Starts PyQt5 class iteration, required for system tray ic
 #settings(discordServer, False)
 
 if settings("discordServer") == True:
+    loadingWindow["-LOAD-TEXT-"].update("Connecting to Discord ...")
+    loadingWindow.refresh()
+
     client = DiscordClient()
     print("Running Client...")
     client.run(TOKEN)
 
 else:
+    loadingWindow["-LOAD-TEXT-"].update("Connecting to System Tray ...")
+    loadingWindow.refresh()
+
     startTrayIcon()
 
 

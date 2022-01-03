@@ -10,5 +10,5 @@ betty
 objective_response
 articulation
 wikipedia
-adroit_response
+clever_response
 joke

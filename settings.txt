@@ -27,4 +27,5 @@
  'adroit_responseTime': 9.149158737659455,
  'articulationTime': 18,
  'discordServer': False,
- 'bettyTime': 0.74271484375}
+ 'bettyTime': 0.74271484375,
+ 'clever_responseTime': 10.953}

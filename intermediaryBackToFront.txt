@@ -29,6 +29,7 @@
 [BACKEND] Indexing home directory... 52000 files indexed.
 [BACKEND] Indexing home directory... 54000 files indexed.
 [BACKEND] Indexing home directory... 56000 files indexed.
+[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 58000 files indexed.
 [BACKEND] Indexing home directory... 60000 files indexed.
 [BACKEND] Indexing home directory... 62000 files indexed.
@@ -41,6 +42,7 @@
 [BACKEND] TELL: Importing probability cabability.
 [BACKEND] TELL: Importing script cabability.
 [BACKEND] TELL: Importing trivia cabability.
+[LISTENER] Processing Voice
 [BACKEND] TELL: Importing mathematical solution cabability.
 [BACKEND] TELL: Importing adventure cabability.
 [BACKEND] TELL: Importing fun fact cabability.
@@ -48,37 +50,14 @@
 [BACKEND] TELL: Importing objective response cabability.
 [BACKEND] TELL: Importing articulation cabability.
 [BACKEND] TELL: Importing wikipedia cabability.
-[BACKEND] TELL: Importing adroit response cabability.
+[BACKEND] TELL: Importing clever response cabability.
+[LISTENER] Processing Voice
+[LISTENER] Processing Voice
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 17.84580421447754 s.
+[BACKEND] Loaded in 18.354721307754517 s.
 [BACKEND] Ready
-[BACKEND] Gererating response for I am well thankyou tom.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: adroit_response
-[BACKEND] Response: I love ed sheeran.
-[BACKEND] Generated in 11.72734022140503 s.
-[BACKEND] Gererating response for Who is ed sheeran?
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] Response: According to en.wikipedia.org ...
-Benjamin Joseph Levin , known professionally as Benny Blanco , is an American record producer, DJ, songwriter and record executive. He is the recipient of the 2013 Hal David Starlight Award from the Songwriters Hall of Fame .   He is also a five-time BMI Songwriter of the Year award winner and 2017 iHeartRadio Producer of the Year award winner..
-[BACKEND] Generated in 22.70079231262207 s.
+[LISTENER] Processing Voice
+[LISTENER] Processing Voice
+[LISTENER] Processing Voice
+[LISTENER] Processing Voice
+[LISTENER] Processing Voice
