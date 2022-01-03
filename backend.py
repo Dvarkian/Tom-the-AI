@@ -544,7 +544,7 @@ def main(): # Main backend function, non-blocking.
                 break
         else:
             retort("FALLBACK")
-            out = adroit_response.go(inp)
+            out = clever_response.go(inp)
             if out == False or out == None:
                 out = subjective_response.go(inp)
         

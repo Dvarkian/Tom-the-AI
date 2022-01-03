@@ -1,3 +1,4 @@
 
-[FRONTEND] Respond: Hello.
-[FRONTEND] Say: Passive voice recognition enabled.
+[FRONTEND] Respond: Hello tom.
+[FRONTEND] Respond: No.
+[FRONTEND] Frontend Closed

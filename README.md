@@ -59,7 +59,7 @@ Features
 
 Tom generates outputs to any input by using natural language processing to determine the most suitable response module from which to source the reply.
 
-Give Tom natural language input, either via voice recognition or text input, for instance `Hey Tom, what is petrichor?`, and he'll respond in the most appropriate way. Note that the 'Hey Tom' activation phrase is only required of voice inputs. Passive voice input can be activated by double clicking the microphone button. Single click to use voice recognition for a single input.
+Give Tom natural language input, either via voice recognition or text input, for instance `Hey Tom, what is petrichor?`, and he'll respond in the most appropriate way. Note that the 'Hey Tom' activation phrase is only required of voice inputs, and should be omitted on text. Passive voice input can be activated by double clicking the microphone button. Single click to use voice recognition for a single input.
 
 ![Tom the AI](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/tomFace_original.gif)
 
@@ -232,7 +232,7 @@ Planned Features
 New response modules & capabilities to look forward to in future versions of Tom:
 
  - Timers & stopwatch capabilities.
- - Ability execute terminal commands.
+ - Ability to execute terminal commands.
  - Automated module installation.
  - Releases and updates available on the Ubuntu apt repositories.
 

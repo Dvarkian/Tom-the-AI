@@ -9,6 +9,7 @@ fun_fact
 betty
 objective_response
 articulation
+command
 wikipedia
 clever_response
 joke
