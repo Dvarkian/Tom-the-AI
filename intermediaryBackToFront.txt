@@ -26,10 +26,10 @@
 [BACKEND] Indexing home directory... 46000 files indexed.
 [BACKEND] Indexing home directory... 48000 files indexed.
 [BACKEND] Indexing home directory... 50000 files indexed.
+[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 52000 files indexed.
 [BACKEND] Indexing home directory... 54000 files indexed.
 [BACKEND] Indexing home directory... 56000 files indexed.
-[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 58000 files indexed.
 [BACKEND] Indexing home directory... 60000 files indexed.
 [BACKEND] Indexing home directory... 62000 files indexed.
@@ -42,7 +42,6 @@
 [BACKEND] TELL: Importing probability cabability.
 [BACKEND] TELL: Importing script cabability.
 [BACKEND] TELL: Importing trivia cabability.
-[LISTENER] Processing Voice
 [BACKEND] TELL: Importing mathematical solution cabability.
 [BACKEND] TELL: Importing adventure cabability.
 [BACKEND] TELL: Importing fun fact cabability.
@@ -51,13 +50,23 @@
 [BACKEND] TELL: Importing articulation cabability.
 [BACKEND] TELL: Importing wikipedia cabability.
 [BACKEND] TELL: Importing clever response cabability.
-[LISTENER] Processing Voice
-[LISTENER] Processing Voice
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 18.354721307754517 s.
+[BACKEND] Loaded in 19.779974222183228 s.
 [BACKEND] Ready
-[LISTENER] Processing Voice
-[LISTENER] Processing Voice
-[LISTENER] Processing Voice
-[LISTENER] Processing Voice
-[LISTENER] Processing Voice
+[BACKEND] Gererating response for Hello.
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: articulation
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: clever_response
+[BACKEND] Response: Stop saying hello..
+[BACKEND] Generated in 6.951659679412842 s.
+[BACKEND] Vocalising Passive voice recognition enabled.

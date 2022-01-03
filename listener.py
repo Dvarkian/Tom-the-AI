@@ -9,7 +9,11 @@ from ioUtils import * # Input / output utilities.
 # Import command handellers.
 import os
 import sys
+import time
 import subprocess
+
+from settings import settings
+
 
 # Find platform and directory from which program is running.
 
@@ -170,12 +174,15 @@ def main(): # Main listener function. Noon-blocking.
         if contains(incoming, ["stop", "quit", "exit"]): # Close the listener.
             
             retort("Closing Listener")
-            quit()
+            settings("useVoice", False)
 
-    heard = listen() # Listen for a voice input
+    if settings("useVoice") == True:
+        heard = listen() # Listen for a voice input
 
-    if heard: # A voice inpput was heard.
-        retort("Heard: " + heard) # Send to frontend.
+        if heard: # A voice inpput was heard.
+            retort("Heard: " + heard) # Send to frontend.
+    else:
+        time.sleep(2)
 
 
 while True: # Main loop for listener.

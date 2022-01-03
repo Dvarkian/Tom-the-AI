@@ -4,7 +4,7 @@
  'cache': False,
  'microphoneState': 'off',
  'activationPhrase': 'hey tom',
- 'useVoice': False,
+ 'useVoice': 0,
  'voiceRate': 88.0,
  'length': 1224,
  'scrapeRetries': 7,
@@ -28,4 +28,4 @@
  'articulationTime': 18,
  'discordServer': False,
  'bettyTime': 0.74271484375,
- 'clever_responseTime': 10.953}
+ 'clever_responseTime': 8.952}
