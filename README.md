@@ -34,7 +34,7 @@ Download Tom by cloning the GitHub repository into your home folder using `git c
 
 **Step 4 - Install Python dependencies:** 
 
-Open a terminal inside Tom's application folder, or navigate using `cd ~/Tom-the-AI/`. Now run `sudo pip3 install requirements.txt`. Some systems may use `pip` in place of `pip3`.
+Open a terminal inside Tom's application folder, or navigate using `cd ~/Tom-the-AI/`. Now run `sudo pip3 install -r requirements.txt`. Some systems may use `pip` in place of `pip3`.
 
 Next, we need to download the required NLTK libraries by running the following code in a python shell:
 
