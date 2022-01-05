@@ -1,4 +1,0 @@
-
-[FRONTEND] Respond: Hello tom.
-[FRONTEND] Respond: No.
-[FRONTEND] Frontend Closed

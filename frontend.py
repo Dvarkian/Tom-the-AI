@@ -48,6 +48,8 @@ def ignoreWarning(): # Provides aa warning telling the user not to ignore warnin
         return False
 
 
+os.chdir("/".join(__file__.split("/")[:-1]))
+
 if "\\" in os.getcwd(): # Recognises windows machines by use of \\ in their file paths.
     
     platform = "windows"
@@ -89,32 +91,51 @@ sys.path.insert(0, dir_ + "generic_modules") # Modules used by both windows and 
 print("Oporating System identified as " + platform) # Output identified OS to shell.
 
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-q", "--quiet", help="Start Tom reduced to system tray.", action="store_true")
+args = parser.parse_args()
+
+if args.quiet:
+    settings("startDown", True)
+    settings("discordServer", False)
+    time.sleep(8)
+else:
+    settings("startDown", False)
+
+username = str(subprocess.check_output(['whoami']))[2:-3] # Get the user's name.
+
+if platform == "windows": # Fixes a bug that occurs on windows machines running a dual user.
+    username = username.split("\\")[0]
+
 # Create a loading window, as loading can take a while.
 
 import PySimpleGUI as sg # Primary graphics manager. Handles user interface
 
-# Layout definition for loading window.
-loadingLayout = [[sg.Column([[sg.Image("graphics/squareFace.gif", background_color="black", key="-LOADGIF-")],
-                 [sg.Text("LOADING TOM ...", text_color="light blue", background_color="black", font="Helevicta 12 italic", size=(None, 1))],
-                 [sg.ProgressBar(100, orientation="horizontal", size=(20, 2), bar_color=["purple", "black"], key="-LOAD-PROGRESS-",
-                                 border_width=0)],
-                 [sg.Text("Importing modules...", text_color="grey60", background_color="black", key="-LOAD-TEXT-",
-                          font=(kernedFont, 8), size=(None, 1))]
-                  ], element_justification="centre", background_color="black")]]
+if not settings("startDown"):
+    # Layout definition for loading window.
+    loadingLayout = [[sg.Column([[sg.Image("graphics/squareFace.gif", background_color="black", key="-LOADGIF-")],
+                     [sg.Text("LOADING TOM ...", text_color="light blue", background_color="black", font="Helevicta 12 italic", size=(None, 1))],
+                     [sg.ProgressBar(100, orientation="horizontal", size=(20, 2), bar_color=["purple", "black"], key="-LOAD-PROGRESS-",
+                                     border_width=0)],
+                     [sg.Text("Importing modules...", text_color="grey60", background_color="black", key="-LOAD-TEXT-",
+                              font=(kernedFont, 8), size=(None, 1))]
+                      ], element_justification="centre", background_color="black")]]
 
-# Initiate loading window.
-loadingWindow = sg.Window('Loading Tom ...', loadingLayout,
-        grab_anywhere=True,
-        keep_on_top=True,
-        background_color="black",
-        alpha_channel=.92, # Transparency.
-        finalize=True, # Update assembled loading window to screen.
-        icon="graphics/squareFace.png",
-        #no_titlebar=True,
-        margins=(35, 35))
+    # Initiate loading window.
+    loadingWindow = sg.Window('Loading Tom ...', loadingLayout,
+            grab_anywhere=True,
+            keep_on_top=True,
+            background_color="black",
+            alpha_channel=.92, # Transparency.
+            finalize=True, # Update assembled loading window to screen.
+            icon="graphics/squareFace.png",
+            #no_titlebar=True,
+            margins=(35, 35))
 
-loadingWindow.refresh() # Make sure loading window is fully displayed before continuing.
-
+    loadingWindow.refresh() # Make sure loading window is fully displayed before continuing.
+else:
+    loadingWindow = {}
 
 def retort(message): # Outputs a message to the backend / listener via an intermediary.txt file.
 
@@ -217,8 +238,9 @@ elif platform == "windows":
 
 import requests # used to retrieve web pages.
 
-loadingWindow["-LOAD-TEXT-"].update("Connecting to the Internet ...")
-loadingWindow.refresh()
+if not settings("startDown"):
+    loadingWindow["-LOAD-TEXT-"].update("Connecting to the Internet ...")
+    loadingWindow.refresh()
 
 while 1: # Loop to check we are connected to the internet.
     
@@ -244,8 +266,9 @@ while 1: # Loop to check we are connected to the internet.
         else:
             continue
 
-loadingWindow["-LOAD-TEXT-"].update("Importing Modules ...")
-loadingWindow.refresh()
+if not settings("startDown"):
+    loadingWindow["-LOAD-TEXT-"].update("Importing Modules ...")
+    loadingWindow.refresh()
 
 # Import PyQt5 with PyQt4 backwards compatibility, used for system tray icon.
 import PyQt5
@@ -257,9 +280,10 @@ from PyQt5.QtGui import *
 import plyer # A remarkably versetile module, so far we're only using it for sending desktop notifications.
 
 # Give a test notification during loading.
-plyer.notification.notify(title="Hello!", message="Did you know: Tom can use these notifications to run in the backgroud " +
-                          "via voice recognition and vocalisation.",
-                          app_icon=dir_+"graphics/squareFace.ico", timeout=12)
+if not settings("startDown"):
+    plyer.notification.notify(title="Hello!", message="Did you know: Tom can use these notifications to run in the backgroud " +
+                              "via voice recognition and vocalisation.",
+                              app_icon=dir_+"graphics/squareFace.ico", timeout=12)
 
 
 import datetime # Handles dates. Possibly superfluous.
@@ -318,10 +342,6 @@ client = discord.Client()
 tomFace = "graphics/squareFace.gif" # Gif for tom's 'face'. Should be 300x300px.
 
 
-username = str(subprocess.check_output(['whoami']))[2:-3] # Get the user's name.
-
-if platform == "windows": # Fixes a bug that occurs on windows machines running a dual user.
-    username = username.split("\\")[0]
 
 # Establish base Directory for file search
 if platform == "linux":
@@ -1103,8 +1123,9 @@ def loadMainWindow(): # Loads the main program window.
 
 # Start loading the user interface.
 
-loadingWindow["-LOAD-TEXT-"].update("Loading interface...")
-loadingWindow.refresh()
+if not settings("startDown"):
+    loadingWindow["-LOAD-TEXT-"].update("Loading interface...")
+    loadingWindow.refresh()
 
 notified = False
 
@@ -1117,24 +1138,28 @@ while True: # Wait for backend to be ready.
         break
 
     elif not notified: # Change the loading status.
-        loadingWindow["-LOAD-TEXT-"].update("Indexing local file system ...")
-        loadingWindow.refresh()
+        if not settings("startDown"):
+            loadingWindow["-LOAD-TEXT-"].update("Indexing local file system ...")
+            loadingWindow.refresh()
         notified = True
 
     else: # Move the progressbar in accord with the estimated loading time.
-        loadingWindow["-LOAD-PROGRESS-"].update(float(((time.time() - startTime) / estLoadTime) * 100))
-        loadingWindow['-LOADGIF-'].update_animation(tomFace, time_between_frames=15) # Update the animation in the window
-        loadingWindow.refresh()
+        if not settings("startDown"):
+            loadingWindow["-LOAD-PROGRESS-"].update(float(((time.time() - startTime) / estLoadTime) * 100))
+            loadingWindow['-LOADGIF-'].update_animation(tomFace, time_between_frames=15) # Update the animation in the window
+            loadingWindow.refresh()
 
     if "TELL: " in fromBack:
-        msg = fromBack.split("TELL: ")[-1]
-        loadingWindow["-LOAD-TEXT-"].update(msg)
-    
-        loadingWindow.refresh()
+        if not settings("startDown"):
+            msg = fromBack.split("TELL: ")[-1]
+            loadingWindow["-LOAD-TEXT-"].update(msg)
+        
+            loadingWindow.refresh()
     #time.sleep(0.1)
 
 
-window = loadMainWindow() # Load the main window once the backend is ready.
+if not settings("startDown"):
+    window = loadMainWindow() # Load the main window once the backend is ready.
 
 
 def close(): # Closes the main window and exits the program.
@@ -1331,35 +1356,30 @@ def main(inp=""): # Main program function.-
                  pass
 
 
-    if working == "False" and not remote: # Clean old generation progress off progress bar.
-        
-        if playing != "playing" and playing != "paused": # Reset loading bar if not playing audio.
-            window["-GEN-PROGRESS-"].update(0)
+    if windowOpen and not remote: # Catches main window events.
+
+        if working == "False": # Clean old generation progress off progress bar.
             
-        else: # An attempt to fix a bug that occurred once, but that I was never able to reproduce.
-            working = "playing"
+            if playing != "playing" and playing != "paused": # Reset loading bar if not playing audio.
+                window["-STATUS-"].update("Ready ...")
+                window["-GEN-PROGRESS-"].update(0)
+                
+            else: # An attempt to fix a bug that occurred once, but that I was never able to reproduce.
+                working = "playing"
 
-    elif playing != "playing" and playing != "paused" and not remote: # Update loading bar if not playing audio.
+        elif playing != "playing" and playing != "paused": # Update loading bar if not playing audio.
 
-        estGenTime = settings(working + "Time")
-            
-        if estGenTime == None: # No estimated time, resort to a nominal value of 18 seconds.
-            print("Gen time not found for", working)
-            settings(working + "Time", 18) # Define this valus so that it can be finetuned in the future.
-            estGenTime = 18
+            estGenTime = settings(working + "Time")
+                
+            if estGenTime == None: # No estimated time, resort to a nominal value of 18 seconds.
+                print("Gen time not found for", working)
+                settings(working + "Time", 18) # Define this valus so that it can be finetuned in the future.
+                estGenTime = 18
 
-        # Update the progressbar.
-        window["-GEN-PROGRESS-"].update(int(((time.time() - genStart) / (estGenTime * 1.3)) * 100))
-        #time.sleep(0.02) # Possibly superfluous.
+            # Update the progressbar.
+            window["-GEN-PROGRESS-"].update(int(((time.time() - genStart) / (estGenTime * 1.3)) * 100))
+            #time.sleep(0.02) # Possibly superfluous.
 
-
-    if working == "False" and playing != "playing" and playing != "paused" and not remote: # Reset the status to "Ready ..." if not generating an output.
-
-        window["-STATUS-"].update("Ready ...")
-        window["-GEN-PROGRESS-"].update(0)
-        
-
-    if windowOpen and not remote: # Catches main window events.Yp
 
         # Read events and values from the window.
         
@@ -1657,23 +1677,27 @@ def startTrayIcon(): # Starts PyQt5 class iteration, required for system tray ic
 
     trayIcon.show() # Display the system tray Icon.
 
-    loadingWindow.close()
+    if not settings("startDown"):
+        loadingWindow.close()
+    
     app.exec_() # This is blocking, repeatedly callls the update() method until program is closed.
 
 
 #settings(discordServer, False)
 
 if settings("discordServer") == True:
-    loadingWindow["-LOAD-TEXT-"].update("Connecting to Discord ...")
-    loadingWindow.refresh()
+    if not settings("startDown"):
+        loadingWindow["-LOAD-TEXT-"].update("Connecting to Discord ...")
+        loadingWindow.refresh()
 
     client = DiscordClient()
     print("Running Client...")
     client.run(TOKEN)
 
 else:
-    loadingWindow["-LOAD-TEXT-"].update("Connecting to System Tray ...")
-    loadingWindow.refresh()
+    if not settings("startDown"):
+        loadingWindow["-LOAD-TEXT-"].update("Connecting to System Tray ...")
+        loadingWindow.refresh()
 
     startTrayIcon()
 

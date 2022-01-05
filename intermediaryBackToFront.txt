@@ -20,6 +20,7 @@
 [BACKEND] Indexing home directory... 34000 files indexed.
 [BACKEND] Indexing home directory... 36000 files indexed.
 [BACKEND] Indexing home directory... 38000 files indexed.
+[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 40000 files indexed.
 [BACKEND] Indexing home directory... 42000 files indexed.
 [BACKEND] Indexing home directory... 44000 files indexed.
@@ -27,7 +28,6 @@
 [BACKEND] Indexing home directory... 48000 files indexed.
 [BACKEND] Indexing home directory... 50000 files indexed.
 [BACKEND] Indexing home directory... 52000 files indexed.
-[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 54000 files indexed.
 [BACKEND] Indexing home directory... 56000 files indexed.
 [BACKEND] Indexing home directory... 58000 files indexed.
@@ -37,6 +37,7 @@
 [BACKEND] Indexing home directory... 66000 files indexed.
 [BACKEND] Indexing home directory... 68000 files indexed.
 [BACKEND] Indexing home directory... 70000 files indexed.
+[BACKEND] Indexing home directory... 72000 files indexed.
 [BACKEND] TELL: Importing dice roll cabability.
 [BACKEND] TELL: Importing memory cabability.
 [BACKEND] TELL: Importing probability cabability.
@@ -52,43 +53,5 @@
 [BACKEND] TELL: Importing wikipedia cabability.
 [BACKEND] TELL: Importing clever response cabability.
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 17.4023334980011 s.
+[BACKEND] Loaded in 27.035615921020508 s.
 [BACKEND] Ready
-[BACKEND] Gererating response for Hello tom.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: command
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] Response: Stop saying hello..
-[BACKEND] Generated in 5.046741008758545 s.
-[BACKEND] Gererating response for No.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: command
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] GEN: joke
-[BACKEND] GEN: 
-[BACKEND] Response error: invalid syntax (<string>, line 1) in 
-[BACKEND] FALLBACK
-[BACKEND] Response: Yes.
-[BACKEND] Generated in 7.201665639877319 s.
