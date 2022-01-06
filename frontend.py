@@ -4,7 +4,7 @@
 
 print("Loading Tom ...") # Initial confirmation of program execution.
 
-tomVersion = "1.0"
+tomVersion = "1.1.1"
 
 from ioUtils import * # Various utilities that I use with a lot of my programs. Mostly innput / output related.
 
