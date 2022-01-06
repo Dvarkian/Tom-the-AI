@@ -7,6 +7,7 @@ better_profanity>=0.7.0
 cefpython3==66.0
 cleverbot_scraper>=0.1
 datetime
+deepface
 discord>=1.7.3
 distro==1.6.0
 fake_headers>=1.0.2
@@ -18,6 +19,9 @@ monotonic==1.6
 nltk>=3.5
 numpy>=1.21.5
 oauth2client==4.1.3
+opencv-contrib-python
+opencv-python==4.4.0.46
+opencv-python-headless==4.4.0.46
 parlai==1.5.1
 Pillow>=8.4.0
 pocketsphinx==0.1.15

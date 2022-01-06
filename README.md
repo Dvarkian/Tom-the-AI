@@ -63,7 +63,10 @@ Give Tom natural language input, either via voice recognition or text input, for
 
 ![Tom the AI](https://github.com/Mblizzard/Tom-the-AI/blob/main/graphics/tomFace_original.gif)
 
-The following is a non-exhaustive list of Tom's capabilities:
+
+### Active Responses:
+
+The following is a non-exhaustive list of Tom's active response capabilities. These capabilities are activated in response to a direct input.
 
 *Objective Response (From anywhere on the internet):*
     
@@ -181,6 +184,23 @@ The following is a non-exhaustive list of Tom's capabilities:
         TX packets 235650 bytes 23471151 (23.4 MB)
         TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0.
 
+
+### Passive Responses:
+
+Passive response capabilities can activate without direct user input. All passive responses can be enabled or disaled in the settings page.
+
+*Voice Recognition:*
+    
+    [I heard 'This is background noise']
+    *NOTE: Tom will not respond unless the activation phrase is heard, but will still display any recognised voice using this format.*
+
+*Emotion Recognition:*
+    
+    [You look surprised.]
+    Why are you surprised?
+    *NOTE: This may use a lot of processing power, and is best left disabled on older devices.*
+
+
 This is a fair representation of Tom's capabilities as they currently stand. See the following section on contributing for a guide of how to create your own response modules for Tom, and expand upon the above abilities.
 
 
@@ -232,17 +252,16 @@ Planned Features
 New response modules & capabilities to look forward to in future versions of Tom:
 
  - Timers & stopwatch capabilities.
- - Ability to execute terminal commands.
  - Automated module installation.
  - Releases and updates available on the Ubuntu apt repositories.
-
+ - Automatic addition of alias to \~/.bashrc on first load.
 
 Features I'm not currently planning to include in Tom, but that I'll consider adding if enough people are interested:
 
  - Windows support.
  - Easier discord setup (more on this below). 
  - Command line interface.
-
+ - Ability to execute terminal commands.
 
 **Versioning:** Releases will follow a [semantic versioning format](http://semver.org/): `<major>.<minor>.<patch>`
 

@@ -30,7 +30,7 @@ platform = "unknown" # Placeholder for detected oporatinng system
 dir_ = "" # Placeholder for working directory
 
 
-estLoadTime = 117 # Placeholder for estimated load time. Value is later set on a per platform basis.
+estLoadTime = settings("estloadTime") # Placeholder for estimated load time. Value is later set on a per platform basis.
 newGen = False # Placeholder to determine if a new response generation process has just been initiated.
 
 
@@ -51,7 +51,6 @@ def ignoreWarning(): # Provides aa warning telling the user not to ignore warnin
 os.chdir("/".join(__file__.split("/")[:-1]))
 
 if "\\" in os.getcwd(): # Recognises windows machines by use of \\ in their file paths.
-    
     platform = "windows"
     
     dir_ = os.getcwd() + "\\" # Find directory from which program is running.
@@ -74,14 +73,11 @@ if "\\" in os.getcwd(): # Recognises windows machines by use of \\ in their file
                 quit()
     
 else: # File path uses / instead of \\. Therefor we are running on a unix or bsd system
-    
     platform = "linux" # BSD and mac are not supported. Therefor assume we are running on linux.
     
     dir_ = os.getcwd() + "/" # Find directory from which program is running.
     #sys.path.insert(0, dir_ + "linux_") # Add linux module directory to locations that python will search when tryingg to impory modules.
     sys.path.insert(0, dir_ + "responses") # Add linux module directory to locations that python will search when tryingg to impory modules.
-    
-    estLoadTime = 18
 
     kernedFont = "Helevicta"
 
@@ -193,32 +189,34 @@ activePID = os.getpid() # Get the PID of this frontend process, so theat we don'
 
 print("My PID: ", activePID) # Output the recognised PID of this frontend.
 
-for proc in psutil.process_iter(): # Iterate over all running process to find and kill zombie backends / listeners.
-    # Zombie presesses occur when the software did not exit correctly. e.g. someone typed ctrl+c in the shell instead of quit in the UI.
-    # We need to remove these to avoid double-ups on processing.
-    
-    try: # Try to get process name & pid from process object.
+def killZombies():
+    for proc in psutil.process_iter(): # Iterate over all running process to find and kill zombie backends / listeners.
+        # Zombie presesses occur when the software did not exit correctly. e.g. someone typed ctrl+c in the shell instead of quit in the UI.
+        # We need to remove these to avoid double-ups on processing.
         
-        processName = proc.name()
-        processID = proc.pid
-        
-        #print(processID, processName)
+        try: # Try to get process name & pid from process object.
+            
+            processName = proc.name()
+            processID = proc.pid
+            
+            #print(processID, processName)
 
-    except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess): # Process could not be acessed by python.
-        pass # Don't do anything to system processes.
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess): # Process could not be acessed by python.
+            pass # Don't do anything to system processes.
 
-    if str(processID) != str(activePID): # Avoid killing this frontend.
+        if str(processID) != str(activePID): # Avoid killing this frontend.
 
-        if processName in ["python3.9", "py.exe"]: # Check for zombie backends (or listeners).
+            if processName in ["python3.9", "py.exe"]: # Check for zombie backends (or listeners).
 
-            # Kill any zombie backends / listeners so that we can start afresh.
-            if platform == "linux":
-                os.kill(int(processID), signal.SIGKILL) # End process with kill signal on linux.
-            elif platform == "windows":
-                os.kill(int(processID), signal.SIGTERM) # Terminate signal is used on windows.
-                
-            print("Killed PID", processID)
+                # Kill any zombie backends / listeners so that we can start afresh.
+                if platform == "linux":
+                    os.kill(int(processID), signal.SIGKILL) # End process with kill signal on linux.
+                elif platform == "windows":
+                    os.kill(int(processID), signal.SIGTERM) # Terminate signal is used on windows.
+                    
+                print("Killed PID", processID)
 
+killZombies()
 
 # Clear / create the intermediary files. One for each direction of transmission.
 intermediary = open("intermediaryFrontToBack.txt", "w")
@@ -231,9 +229,11 @@ intermediary.close()
 if platform == "linux":
     backendProcess = Popen(["python3.9", dir_ + "backend.py"], stdout=PIPE, stderr=PIPE)
     listenerProcess = Popen(["python3.9", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
+    emotionProcess = Popen(["python3.9", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
 elif platform == "windows":
     backendProcess = Popen(["py", "-3.6", dir_ + "backend.py"], stdout=PIPE, stderr=PIPE)
     listenerProcess = Popen(["py", "-3.6", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
+    emotionProcess = Popen(["py", "-3.6", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
 
 
 import requests # used to retrieve web pages.
@@ -511,7 +511,7 @@ responsesGiven = 0
 def output(message, text_color=None, title="Tom", icon="graphics/squareFace.png", silent=False): # Output a response.
     # Includes vocalisation, text, and system tray icon outputs.
     
-    global window, windowOpen, deline, remote, responsesGiven
+    global window, deline, remote, responsesGiven
     global lastVocalisation
 
     message = str(message) # Ensure the message is a string.
@@ -543,7 +543,7 @@ def output(message, text_color=None, title="Tom", icon="graphics/squareFace.png"
                 # Send output as a desktop notification.
                 plyer.notification.notify(title=title, message=message, app_icon=dir_+"graphics/squareFace.ico", timeout=6)
             
-        if windowOpen: # Print output to main window.
+        if settings("windowOpen"): # Print output to main window.
 
             responsesGiven += 1
             
@@ -861,118 +861,23 @@ def respond(inp): # Determines type of response, then retrieves and returns that
 
 
 def help_(): # Open .pdf help file
-
     webbrowser.open("https://github.com/Mblizzard/Tom-the-AI/blob/main/README.md")
 
-    """
-    if platform == "windows":
-        helpLoc = "main".join(dir_.split("main")[:-1]) + "documentation\\Help.pdf"
-        os.startfile(helpLoc)
-        
-    elif platform == "linux":
-        helpLoc = "main".join(dir_.split("main")[:-1]) + "documentation/Help.pdf"
-        process = Popen(["evince", helpLoc], stdout=PIPE, stderr=PIPE)
-    """
 
 def about(): # Display about window.
-
     webbrowser.open("https://github.com/Mblizzard/Tom-the-AI/blob/main/README.md")
-
-    """
-
-    aboutBg = "grey30"
-
-    buttonWidth = 12
-
-    # define layout of about window.
-    
-    aboutLayout = [[sg.Text("About Tom:", font=(kernedFont, 21), text_color="orchid1", background_color=aboutBg, pad=((50, 0), (0, 0))),
-                    sg.Button("Done", key="-BACK-", font=(kernedFont, 12), button_color=("white", "grey15"), pad=((175, 0), (0, 0)),
-                              mouseover_colors=("orchid1", "grey5"))],
-                   [sg.HorizontalSeparator()],
-                   [sg.Text("\n"*2, key="-TEXT-", text_color="light blue", background_color=aboutBg, font=(kernedFont, 12))],
-                   [sg.Button("Help", key="-HELP-", size=(buttonWidth, 1), font=(kernedFont, 12), button_color=("orchid1", "grey15"),
-                              mouseover_colors=("black", "light blue")),
-                    sg.Button("Liscence", key="-LISCENCING-", size=(buttonWidth, 1), font=(kernedFont, 12), button_color=("orchid1", "grey15"),
-                              mouseover_colors=("black", "light blue")),
-                    sg.Button("Credits", key="-CREDITS-", size=(buttonWidth, 1), font=(kernedFont, 12), button_color=("orchid1", "grey15"),
-                              mouseover_colors=("black", "light blue"))]]
-
-    
-    # Define parameters of about window.
-    
-    aboutWindow = sg.Window('Tom | About', aboutLayout,
-            grab_anywhere=False,
-            keep_on_top=True,
-            background_color="grey30",
-            alpha_channel=.98,
-            finalize=True,
-            icon="graphics/squareFace.png",
-            margins=(25, 25))
-
-
-    # Define text for windw text element.
-
-    about = ("This program (Tom) was developed by Murray Jones. This version of Tom is distributed as free software for " +
-             "the purposes of testing, critique, and review.\n\n" +
-             "You may utilise this software to its full capacity free of charge, but you are not permitted to redistribute, sell or use this " +
-             "software for commercial purposes under any circumstanes, except via the developer's prior written approval.\n\n" +
-             "To send feedback, or report a bug, please contact Murray Jones at murray.jones12@bigpond.com.")
-
-    aboutWindow['-TEXT-'].Update(about) # Print the message to the bmessage box's test element.
-    aboutWindow['-TEXT-'].Widget.configure(wraplength=500) # Wrap thhe text in the text element.
-    aboutWindow['-TEXT-'].set_size(size = (None, int(len(str(about))/(500/12)))) # Resize the text element to fit the wrapped text.
     
 
-    while True: # Event loop for about window.
-        
-        event, values = aboutWindow.read() # Read events from window.
-
-
-        if event == sg.WIN_CLOSED or event == "-BACK-": # Return to main window.
-            
-            aboutWindow.close()
-            aboutWindow.refresh()
-            
-            break
-        
-
-        elif event == "-LISCENCING-": # Show liscencing information from pdf file.
-            
-            if platform == "windows":
-                liscencingLoc = "main".join(dir_.split("main")[:-1]) + "documentation\\Licencing Statement.pdf"
-                os.startfile(liscencingLoc)
-                
-            elif platform == "linux":
-                liscencingLoc = "main".join(dir_.split("main")[:-1]) + "documentation/Licencing Statement.pdf"
-                process = Popen(["evince", liscencingLoc], stdout=PIPE, stderr=PIPE)
-
-
-        elif event == "-CREDITS-": # Show credits information from pdf file.
-            
-            if platform == "windows":
-                creditsLoc = "main".join(dir_.split("main")[:-1]) + "documentation\\Credits.pdf"
-                os.startfile(creditsLoc)
-                
-            elif platform == "linux":
-                creditsLoc = "main".join(dir_.split("main")[:-1]) + "documentation/Credits.pdf"
-                process = Popen(["evince", creditsLoc], stdout=PIPE, stderr=PIPE)
-
-        elif event == "-HELP-":
-            help_()
-
-    """
-
-windowOpen = False # Placeholder for if window is currently open.
+settings("windowOpen", False) # Placeholder for if window is currently open.
 runGIF = True # Can't recieve input and run gif at the same time.
 
 
 def loadMainWindow(): # Loads the main program window.
-    global windowOpen, runGIF
+    global runGIF
 
     runGIF = True # Can't recieve input and run gif at the same time.
 
-    if windowOpen: # Bring Window into focus
+    if settings("windowOpen"): # Bring Window into focus
         global window
         window.BringToFront() # I love how easy this is :)
         return window
@@ -1116,7 +1021,7 @@ def loadMainWindow(): # Loads the main program window.
 
     window.BringToFront()
 
-    windowOpen = True
+    settings("windowOpen", True)
 
     return window
 
@@ -1145,7 +1050,7 @@ while True: # Wait for backend to be ready.
 
     else: # Move the progressbar in accord with the estimated loading time.
         if not settings("startDown"):
-            loadingWindow["-LOAD-PROGRESS-"].update(float(((time.time() - startTime) / estLoadTime) * 100))
+            loadingWindow["-LOAD-PROGRESS-"].update(float(((time.time() - startTime) / estLoadTime*1.2) * 100))
             loadingWindow['-LOADGIF-'].update_animation(tomFace, time_between_frames=15) # Update the animation in the window
             loadingWindow.refresh()
 
@@ -1161,6 +1066,8 @@ while True: # Wait for backend to be ready.
 if not settings("startDown"):
     window = loadMainWindow() # Load the main window once the backend is ready.
 
+settings("estloadTime", time.time() - startTime)
+
 
 def close(): # Closes the main window and exits the program.
     global window
@@ -1168,6 +1075,8 @@ def close(): # Closes the main window and exits the program.
     # Output a brief goodbye.
     partingWords = random.choice(getSyns(["goodbye", "bye"]))
     output(partingWords.capitalize() + ".", text_color='light blue')
+
+    killZombies()
 
     time.sleep(1.5) # Give user a chance to read the goodbye message.
     window.close() # Close main window.
@@ -1203,7 +1112,7 @@ def main(inp=""): # Main program function.-
     # Note: The system tray icon requires this function to be non-blocking.
 
     # Get all relevant variables as global.
-    global loops, runGIF, windowOpen, playing, playlist
+    global loops, runGIF, playing, playlist
     global lastGraphUpdate, genTimes, newGen, remote, asked
     global lastMicrophoneClick, doubleClickInterval, systemGraphTool
     global working, newGen, genStart, lastIntermediaryRead, intermediaryReadInterval
@@ -1356,7 +1265,7 @@ def main(inp=""): # Main program function.-
                  pass
 
 
-    if windowOpen and not remote: # Catches main window events.
+    if settings("windowOpen") and not remote: # Catches main window events.
 
         if working == "False": # Clean old generation progress off progress bar.
             
@@ -1410,7 +1319,7 @@ def main(inp=""): # Main program function.-
 
         elif event == sg.WIN_CLOSED: # User closed by using the window 'X' button
             if settings("quitToTray") == True and settings("discordServer") == False:
-                windowOpen = False
+                settings("windowOpen", False)
                 window.close()
                 return
             else:
@@ -1518,9 +1427,20 @@ def main(inp=""): # Main program function.-
             
         else:
             runGIF = True # Contingency. runGIF should already be  True at this stage.
-            
 
-    if not len(inp) and settings("useVoice") and runGIF and "Heard: " in incoming and not remote: # Geet a voice input from the listener.
+
+    if not len(inp) and settings("cam") and runGIF and "Emotion: " in incoming and not remote: # Get a emotion from the camera.
+        
+        incoming = incoming.lower()
+        incoming = incoming.split("emotion: ")[1].split(".")[0]
+
+        if "ing" not in incoming:
+            output("You look " + incoming.split("i am ")[1] + ".", silent=True)
+
+        inp = incoming.capitalize()
+        
+
+    if not len(inp) and settings("useVoice") and runGIF and "Heard: " in incoming and not remote: # Get a voice input from the listener.
 
         # Format input.
         incoming = (incoming.lower()).replace(lastVocalisation.lower(), "") # Try to avoid hearing last vocalisation.

@@ -254,7 +254,19 @@ for resp in responseModules:
     resp = resp.replace("\n", "").replace(" ", "")
     if "." not in str(resp) and len(resp) > 3:
         retort("TELL: Importing " + str(resp).replace("_", " ") + " cabability.")
-        exec("import " + str(resp))
+        try:
+            exec("import " + str(resp))
+        except:
+            responseModules.remove(str(resp))
+
+            file = open("responseOrder.txt", "w")
+            file.close()
+            
+            with open("responseOrder.txt", "a") as file:
+                for resp in responseModules:
+                    file.write(str(resp) + "\n")
+            
+            
         #print(eval(str(resp) + ".respond(\"" + input("inport > ") + "\")"))
 
 
@@ -587,6 +599,9 @@ def main(): # Main backend function, non-blocking.
 
 
 while True: # Main loop for backend.
+
+    #main()
+
     
     try:
         main() # Run the main function.

@@ -15,7 +15,7 @@ from nltk.tokenize import word_tokenize
 online = True
 try:
     cleverbot("Hello.", ["hi.", "How are you?"], "How are you?")
-except ConnectionError:
+except: # ConnectionError:
     online = False
 
 def contains(string, list_, wholeWord=False): # Returns true if the words iin the list are anywhere in the string.
@@ -57,12 +57,22 @@ def getSyns(list_): # Finds synonyms for words in the given list.
 def go(inp):
     if not online:
         return False
-    
-    out = cleverbot(inp, session="How are you?")
-    out = out.strip(" ")
-    if out[-1] != ".":
-        out += "."
-    return out
+
+    n = 0
+    out = ""
+
+    while not len(out) and n < 3:
+        
+        out = cleverbot(inp, session="How are you?")
+        out = out.strip(" ")
+
+        try:
+            if out[-1] != ".":
+                out += "."
+            return out
+        
+        except IndexError:
+            continue
     
 
 def respond(inp):

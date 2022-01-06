@@ -73,6 +73,11 @@ def editSettings(window, systemGraphTool): # Edit settings.
     else:
         vr_toggle_btn = toggle_btn_off
 
+    if settings("cam") != "off":
+        cam_toggle_btn = toggle_btn_on
+    else:
+        cam_toggle_btn = toggle_btn_off
+
     if settings("cache"):
         cache_toggle_btn = toggle_btn_on
     else:
@@ -103,7 +108,7 @@ def editSettings(window, systemGraphTool): # Edit settings.
 
     # Define layout of interface settings.
     
-    col = sg.Column(background_color=settingsBgCol, layout=[
+    col = sg.Column(background_color=settingsBgCol, size=(400, 600), layout=[
         [sg.Button("", image_data=detailedGraph_toggle_btn, key="-DETAILED-GRAPH-", button_color=(None, settingsBgCol), border_width=0,
                    image_subsample=2, mouseover_colors=(settingsBgCol, settingsBgCol)),
          sg.Text("Detailed activity graph.", background_color=settingsBgCol, font=(kernedFont, 12))],
@@ -116,6 +121,9 @@ def editSettings(window, systemGraphTool): # Edit settings.
          sg.Text("Enable voice recognition.", background_color=settingsBgCol, font=(kernedFont, 12))],
         [sg.Text("Activation Phrase:", background_color=settingsBgCol, font=(kernedFont, 12)),
          sg.Input(default_text=settings("activationPhrase"), key="-VRID-", font=(kernedFont, 12), size=(20, 1))],
+        [sg.Button("", image_data=cam_toggle_btn, key="-CAM-", button_color=(None, settingsBgCol), border_width=0,
+                   image_subsample=2, mouseover_colors=(settingsBgCol, settingsBgCol)),
+         sg.Text("Enable emotion recognition.", background_color=settingsBgCol, font=(kernedFont, 12))],
         [sg.HorizontalSeparator()],
         [sg.Button("", image_data=v_toggle_btn, key="-USEVOICE-", button_color=(None, settingsBgCol), border_width=0,
                    image_subsample=2, mouseover_colors=(settingsBgCol, settingsBgCol)),
@@ -182,19 +190,34 @@ def editSettings(window, systemGraphTool): # Edit settings.
             if settings("microphoneState") != "off":
                 settingsWindow["-VR-"].update(image_data=toggle_btn_off, image_subsample=2)
                 settings("microphoneState = 0")
-                retort("stop listener")
+                #retort("stop listener")
                 window["-MICROPHONE-"].update(image_filename="graphics/microphone_white.png", image_subsample=13) # Change the button image.
             else:
                 settingsWindow["-VR-"].update(image_data=toggle_btn_on, image_subsample=2)
                 settings("microphoneState = passive")
 
-                if platform == "linux":
-                    listenerProcess = Popen(["python3.9", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
-                elif platform == "windows":
-                    listenerProcess = Popen(["py", "-3.6", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
+                #if "/" in __file__:
+                #    listenerProcess = Popen(["python3.9", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
+                #else:
+                #    listenerProcess = Popen(["py", "-3.6", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
 
                 window["-MICROPHONE-"].update(image_filename="graphics/microphone_light_blue.png", image_subsample=13) # Change the button image.
-                
+
+
+        elif event == "-CAM-":
+            if settings("cam") != "off":
+                settingsWindow["-CAM-"].update(image_data=toggle_btn_off, image_subsample=2)
+                settings("cam", "off")
+                #retort("stop listener")
+            else:
+                settingsWindow["-CAM-"].update(image_data=toggle_btn_on, image_subsample=2)
+                settings("cam", "on")
+                #if "/" in __file__:
+                #    emotionProcess = Popen(["python3.9", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
+                #else:
+                #    emotionProcess = Popen(["py", "-3.6", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
+
+                        
         elif event == "-USEVOICE-":
             if settings("useVoice"):
                 settingsWindow["-USEVOICE-"].update(image_data=toggle_btn_off, image_subsample=2)

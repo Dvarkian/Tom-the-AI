@@ -4,3 +4,5 @@ __pycache__/ioUtils.cpython-36.pyc
 __pycache__/moduleBrowser.cpython-39.pyc
 __pycache__/ioUtils.cpython-39.pyc
 __pycache__/systemGraphTool.cpython-39.pyc
+intermediaryBackToFront.txt
+intermediaryFrontToBack.txt
