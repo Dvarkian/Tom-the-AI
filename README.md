@@ -1,5 +1,5 @@
 Tom the AI (v1.1.1)
-=================
+===================
 
 Tom is an open source compound artificial intellegence software for Linux systems, built using a series of independent response modules to generate replies to any input. 
 

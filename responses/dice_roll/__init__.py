@@ -305,9 +305,43 @@ def respond(inp):
         contains(inp.lower(), ["word", "action", "person", "place", "world", "thing", "object", "nature", "all", "AP"])):
 
         if "gi" in inp:
-            rangi = random.choice(NLRME)
-            rangi = " ".join(rangi.split(" ")[1:]).strip() + "."
-            return rangi
+
+            st = False
+            end = False
+
+            st_index = 0
+            end_index = 0 
+
+            for i in range(0, len(inp)):
+                if inp[i].isdigit() and not st:
+                    st = True
+                    st_index = i
+                elif not inp[i].isdigit() and st and not end:
+                    end = True
+                    end_index = i
+
+            try:
+                num = int(inp[st_index:end_index])
+            except:
+                num = 1
+
+            #print(num)
+
+            rangis = ""
+
+            for i in range(0, num):
+                rangi = random.choice(NLRME)
+                if num == 1:
+                    rangi = " ".join(rangi.split(" ")[1:]).strip()
+                    rangis += rangi
+                elif i == num:
+                    rangi = " ".join(rangi.split(" ")[1:]).strip()
+                    rangis += rangi + ". "
+                else:
+                    rangi = " ".join(rangi.split(" ")[1:]).strip()
+                    rangis += rangi + ";\n"
+                    
+            return rangis
 
         else:
             out = handle(inp)

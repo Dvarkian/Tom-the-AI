@@ -331,8 +331,8 @@ import asyncio
 import discord
 from discord.ext import tasks
 
-TOKEN = "<Instert Discord bot token here>"
-GUILD = "<Instert Discord server name here>"
+TOKEN = eval(open("/home/murray/discord_id.txt").read())["token"] #"<Instert Discord bot token here>"
+GUILD = eval(open("/home/murray/discord_id.txt").read())["guild"]
 
 client = discord.Client()
 
