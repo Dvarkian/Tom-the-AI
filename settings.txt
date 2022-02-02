@@ -26,7 +26,7 @@
  'mathematical_solutionTime': 18,
  'adroit_responseTime': 9.149158737659455,
  'articulationTime': 18,
- 'discordServer': True,
+ 'discordServer': False,
  'bettyTime': 0.74271484375,
  'clever_responseTime': 7.701671875000001,
  'commandTime': 18,

@@ -336,10 +336,10 @@ def respond(inp):
                     rangis += rangi
                 elif i == num:
                     rangi = " ".join(rangi.split(" ")[1:]).strip()
-                    rangis += rangi + ". "
+                    rangis += rangi + "."
                 else:
                     rangi = " ".join(rangi.split(" ")[1:]).strip()
-                    rangis += rangi + ";\n"
+                    rangis += rangi + "; \n"
                     
             return rangis
 

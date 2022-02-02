@@ -22,13 +22,11 @@
 [BACKEND] Indexing home directory... 38000 files indexed.
 [BACKEND] Indexing home directory... 40000 files indexed.
 [BACKEND] Indexing home directory... 42000 files indexed.
-[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 44000 files indexed.
 [BACKEND] Indexing home directory... 46000 files indexed.
 [BACKEND] Indexing home directory... 48000 files indexed.
 [BACKEND] Indexing home directory... 50000 files indexed.
 [BACKEND] Indexing home directory... 52000 files indexed.
-[EMOTION] Loaded
 [BACKEND] Indexing home directory... 54000 files indexed.
 [BACKEND] Indexing home directory... 56000 files indexed.
 [BACKEND] Indexing home directory... 58000 files indexed.
@@ -39,6 +37,23 @@
 [BACKEND] Indexing home directory... 68000 files indexed.
 [BACKEND] Indexing home directory... 70000 files indexed.
 [BACKEND] Indexing home directory... 72000 files indexed.
+[BACKEND] Indexing home directory... 74000 files indexed.
+[BACKEND] Indexing home directory... 76000 files indexed.
+[BACKEND] Indexing home directory... 78000 files indexed.
+[BACKEND] Indexing home directory... 80000 files indexed.
+[BACKEND] Indexing home directory... 82000 files indexed.
+[LISTENER] Listener Started
+[EMOTION] Loaded
+[BACKEND] Indexing home directory... 84000 files indexed.
+[BACKEND] Indexing home directory... 86000 files indexed.
+[BACKEND] Indexing home directory... 88000 files indexed.
+[BACKEND] Indexing home directory... 90000 files indexed.
+[BACKEND] Indexing home directory... 92000 files indexed.
+[BACKEND] Indexing home directory... 94000 files indexed.
+[BACKEND] Indexing home directory... 96000 files indexed.
+[BACKEND] Indexing home directory... 98000 files indexed.
+[BACKEND] Indexing home directory... 100000 files indexed.
+[BACKEND] Indexing home directory... 102000 files indexed.
 [BACKEND] TELL: Importing dice roll cabability.
 [BACKEND] TELL: Importing memory cabability.
 [BACKEND] TELL: Importing probability cabability.
@@ -53,73 +68,5 @@
 [BACKEND] TELL: Importing wikipedia cabability.
 [BACKEND] TELL: Importing clever response cabability.
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 16.46662950515747 s.
+[BACKEND] Loaded in 10.011146306991577 s.
 [BACKEND] Ready
-[BACKEND] Gererating response for Roll 3 rangis.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: Target asserts that he’ll die if anyone nearby is related to him; Target sprouts a bunch of flexible metal tines on his face; Caster is trapped in a column of brackish water for 1d4 rounds; 
-[BACKEND] Generated in 0.5010712146759033 s.
-[BACKEND] Gererating response for Roll 3 rangis.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: Target reacts violently to anyone who asks his name; Target disgorges a large hourglass nearly empty of sand; Caster’s footprints shine brightly while he’s invisible; 
-[BACKEND] Generated in 0.5012078285217285 s.
-[BACKEND] Gererating response for Https:/tomenor.com/viewtomardis-doctor-who-gif-18874463.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] GEN: joke
-[BACKEND] GEN: 
-[BACKEND] Response error: invalid syntax (<string>, line 1) in 
-[BACKEND] FALLBACK
-[BACKEND] Response: I am The Doctor.
-[BACKEND] Generated in 4.745858669281006 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 10.
-[BACKEND] Generated in 0.5012290477752686 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 18.
-[BACKEND] Generated in 0.5011143684387207 s.
-[BACKEND] Gererating response for Roll 20 rangis.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: Target has a wooden bucket firmly affixed to his head; All within 50 yards are -2 ToHit for 2d10 rounds; Target’s next missile attack automatically strikes him instead; Target is discovered to be a remotely operated machine; All non-magical books within 50 yards must Save or combust; Target forgets how to feed himself; In this area, non-magical metal is invisible under moonlight; All weapons within 50 yards are invulnerable to acid; If cut open, caster is found to contain thousands of bees; Luxuriant, leafy foliage sprouts from the caster’s head; One of caster’s arms oozes fetid slime; Target can’t see light other than sunlight or reflected sunlight; When caster next enters his home, he realizes it’s made of coral; Caster disgorges 1d4 gallons of foul, necrotic mush; Next door opened by caster leads to the basement of a brothel; Target appears to be a hideous corpse until dawn tomorrow; Caster is immune to liquid-based poisons for one year; Creatures Summoned in target’s presence have only 1 hit point; Caster’s presence causes food to be drained of all flavor; Target can’t hear the voice of any female member of his race; 
-[BACKEND] Generated in 0.501223087310791 s.
-[BACKEND] Gererating response for /r d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] GEN: joke
-[BACKEND] GEN: 
-[BACKEND] Response error: invalid syntax (<string>, line 1) in 
-[BACKEND] FALLBACK
-[BACKEND] Response: No, I am a Time Lord.
-[BACKEND] Generated in 4.209099054336548 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 11.
-[BACKEND] Generated in 0.5014448165893555 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 3.
-[BACKEND] Generated in 0.5045130252838135 s.
