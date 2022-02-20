@@ -37,13 +37,13 @@
 [BACKEND] Indexing home directory... 68000 files indexed.
 [BACKEND] Indexing home directory... 70000 files indexed.
 [BACKEND] Indexing home directory... 72000 files indexed.
+[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 74000 files indexed.
+[EMOTION] Loaded
 [BACKEND] Indexing home directory... 76000 files indexed.
 [BACKEND] Indexing home directory... 78000 files indexed.
 [BACKEND] Indexing home directory... 80000 files indexed.
 [BACKEND] Indexing home directory... 82000 files indexed.
-[LISTENER] Listener Started
-[EMOTION] Loaded
 [BACKEND] Indexing home directory... 84000 files indexed.
 [BACKEND] Indexing home directory... 86000 files indexed.
 [BACKEND] Indexing home directory... 88000 files indexed.
@@ -54,6 +54,42 @@
 [BACKEND] Indexing home directory... 98000 files indexed.
 [BACKEND] Indexing home directory... 100000 files indexed.
 [BACKEND] Indexing home directory... 102000 files indexed.
+[BACKEND] Indexing home directory... 104000 files indexed.
+[BACKEND] Indexing home directory... 106000 files indexed.
+[BACKEND] Indexing home directory... 108000 files indexed.
+[BACKEND] Indexing home directory... 110000 files indexed.
+[BACKEND] Indexing home directory... 112000 files indexed.
+[BACKEND] Indexing home directory... 114000 files indexed.
+[BACKEND] Indexing home directory... 116000 files indexed.
+[BACKEND] Indexing home directory... 118000 files indexed.
+[BACKEND] Indexing home directory... 120000 files indexed.
+[BACKEND] Indexing home directory... 122000 files indexed.
+[BACKEND] Indexing home directory... 124000 files indexed.
+[BACKEND] Indexing home directory... 126000 files indexed.
+[BACKEND] Indexing home directory... 128000 files indexed.
+[BACKEND] Indexing home directory... 130000 files indexed.
+[BACKEND] Indexing home directory... 132000 files indexed.
+[BACKEND] Indexing home directory... 134000 files indexed.
+[BACKEND] Indexing home directory... 136000 files indexed.
+[BACKEND] Indexing home directory... 138000 files indexed.
+[BACKEND] Indexing home directory... 140000 files indexed.
+[BACKEND] Indexing home directory... 142000 files indexed.
+[BACKEND] Indexing home directory... 144000 files indexed.
+[BACKEND] Indexing home directory... 146000 files indexed.
+[BACKEND] Indexing home directory... 148000 files indexed.
+[BACKEND] Indexing home directory... 150000 files indexed.
+[BACKEND] Indexing home directory... 152000 files indexed.
+[BACKEND] Indexing home directory... 154000 files indexed.
+[BACKEND] Indexing home directory... 156000 files indexed.
+[BACKEND] Indexing home directory... 158000 files indexed.
+[BACKEND] Indexing home directory... 160000 files indexed.
+[BACKEND] Indexing home directory... 162000 files indexed.
+[BACKEND] Indexing home directory... 164000 files indexed.
+[BACKEND] Indexing home directory... 166000 files indexed.
+[BACKEND] Indexing home directory... 168000 files indexed.
+[BACKEND] Indexing home directory... 170000 files indexed.
+[BACKEND] Indexing home directory... 172000 files indexed.
+[BACKEND] Indexing home directory... 174000 files indexed.
 [BACKEND] TELL: Importing dice roll cabability.
 [BACKEND] TELL: Importing memory cabability.
 [BACKEND] TELL: Importing probability cabability.
@@ -68,5 +104,117 @@
 [BACKEND] TELL: Importing wikipedia cabability.
 [BACKEND] TELL: Importing clever response cabability.
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 10.011146306991577 s.
+[BACKEND] Loaded in 36.05160474777222 s.
 [BACKEND] Ready
+[BACKEND] Gererating response for What is the probability that i will take over the world with self-aware ai which plasters "# by murray jones" on every surface it detects?
+[BACKEND] GEN: dice_roll
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in dice_roll
+[BACKEND] GEN: memory
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in memory
+[BACKEND] GEN: probability
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in probability
+[BACKEND] GEN: script
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in script
+[BACKEND] GEN: trivia
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in fun_fact
+[BACKEND] GEN: betty
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in objective_response
+[BACKEND] GEN: articulation
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in articulation
+[BACKEND] GEN: wikipedia
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in wikipedia
+[BACKEND] GEN: clever_response
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in clever_response
+[BACKEND] GEN: joke
+[BACKEND] Response error: unexpected EOF while parsing (<string>, line 1) in joke
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] FALLBACK
+[BACKEND] Response: Low.
+[BACKEND] Generated in 5.577611684799194 s.
+[BACKEND] Gererating response for What is the probability that i will revolutionize computing / physics modelling using machine learning ai and win a nobel prize?
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] Response error: list index out of range in probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response: According to projectqsydney.com ...
+Project Q seeks to perforate the silos built up around disciplines. We believe that the nature of science and technology is inherently social, and we strive to explore the ways in which these disciplines are cross-pollinated and how they intertwine. Likewise, the intersection of artificial intelligence  and quantum physics, stemming from the disciplines of computer science and physics, respectively, demonstrates the value of building bridges between academically separated fields.
+[BACKEND] Generated in 18.418143033981323 s.
+[BACKEND] Gererating response for What is the probability revolutionize physics modelling using machine learning ai and win a nobel prize?
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response: According to theconversation.com ...
+The Earth’s weather and climate interactions form one of the most complex systems imaginable..
+[BACKEND] Generated in 8.171728610992432 s.
+[BACKEND] Gererating response for What is the probabillity that i will take ovor eth world?
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response: According to www.omnicalculator.com ...
+Our probability calculator gives you six scenarios, plus 4 more when you enter in how many times the "die is cast", so to speak. As long as you know how to find the probability of individual events, it will save you a lot of time..
+[BACKEND] Generated in 12.278671741485596 s.
+[BACKEND] Gererating response for Will i take over the world?
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: articulation
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: clever_response
+[BACKEND] GEN: joke
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] FALLBACK
+[BACKEND] Response: I don't know. Why do you ask.
+[BACKEND] Generated in 8.519698143005371 s.
+[BACKEND] Gererating response for What would you say are the chances that i will take over the world?
+[BACKEND] GEN: dice_roll
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] Response error: list index out of range in probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response: According to www.pewresearch.org ...
+Experts Say the ‘New Normal’ in 2025 Will Be Far More Tech-Driven, Presenting More Big Challenges A plurality of experts think sweeping societal change will make life worse for most people as greater inequality, rising authoritarianism and rampant misinformation take hold in the wake of the COVID-19 outbreak. Still, a portion believe life will be better in a ‘tele-everything’ world where workplaces, health care and social activity improve  By  Janna Anderson ,  Lee Rainie  and  Emily A. Vogels.
+[BACKEND] Generated in 22.05351734161377 s.

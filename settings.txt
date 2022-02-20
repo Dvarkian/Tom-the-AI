@@ -15,13 +15,13 @@
  'probTime': 11.4489921875,
  'convaiTime': 4.920871850179509,
  'workingTime': 12.794159413337708,
- 'subjective_responseTime': 6.456278336711936,
+ 'subjective_responseTime': 7.267819584177984,
  'scriptTime': 7.404658203125,
  'jokeTime': 18,
  'triviaTime': 6.18675,
  'dice_rollTime': 2.02561181640625,
  'memoryTime': 10.013,
- 'objective_responseTime': 10.08784954097867,
+ 'objective_responseTime': 16.894990596311168,
  'fun_factTime': 10.1475,
  'mathematical_solutionTime': 18,
  'adroit_responseTime': 9.149158737659455,
@@ -34,5 +34,5 @@
  'probabilityTime': 18,
  'adventureTime': 18,
  'cam': 'off',
- 'estloadTime': 19.378276824951172,
- 'windowOpen': True}
+ 'estloadTime': 38.32426643371582,
+ 'windowOpen': False}
