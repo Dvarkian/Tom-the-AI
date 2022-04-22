@@ -1,8 +1,32 @@
 
-[FRONTEND] Respond: What is the probability that i will take over the world with self-aware ai which plasters "# by murray jones" on every surface it detects?
-[FRONTEND] Respond: What is the probability that i will revolutionize computing / physics modelling using machine learning ai and win a nobel prize?
-[FRONTEND] Respond: What is the probability revolutionize physics modelling using machine learning ai and win a nobel prize?
-[FRONTEND] Respond: What is the probabillity that i will take ovor eth world?
-[FRONTEND] Respond: Will i take over the world?
-[FRONTEND] Respond: What would you say are the chances that i will take over the world?
-[FRONTEND] Frontend Closed
+[FRONTEND] Respond: Roll 6d6.
+[FRONTEND] Respond: Roll 3d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll 20d6.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll d20.
+[FRONTEND] Respond: Roll 6d20.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll 6d6.
+[FRONTEND] Respond: Roll 6d20.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll 5d20.
+[FRONTEND] Respond: Roll 2d8.
+[FRONTEND] Respond: Roll 6d8.
+[FRONTEND] Respond: Roll 8d6.
+[FRONTEND] Respond: Roll d12.
+[FRONTEND] Respond: Roll 4d12.
+[FRONTEND] Respond: Roll 12d20.
+[FRONTEND] Respond: Roll 6d20.
