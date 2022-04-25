@@ -888,7 +888,7 @@ def loadMainWindow(): # Loads the main program window.
     if platform == "linux":
         buttonSize = 8
         buttonBg = "grey6"
-        outputSize = (48, 28)
+        outputSize = (44, 28)
         fontSize = 10
         progressLen = 75
         inputSize = 43

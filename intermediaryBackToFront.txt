@@ -106,129 +106,41 @@
 [BACKEND] TELL: Importing wikipedia cabability.
 [BACKEND] TELL: Importing clever response cabability.
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 43.021538972854614 s.
+[BACKEND] Loaded in 47.01538324356079 s.
 [BACKEND] Ready
-[BACKEND] Gererating response for Roll 6d6.
+[BACKEND] Gererating response for Hello tom.
 [BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [1 + 6 + 4 + 5 + 6 + 1] = 23.
-[BACKEND] Generated in 0.501002311706543 s.
-[BACKEND] Gererating response for Roll 3d12.
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: articulation
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: clever_response
+[BACKEND] Response: What's your name?.
+[BACKEND] Generated in 1.3363890647888184 s.
+[BACKEND] Gererating response for Murray.
 [BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [2 + 10 + 4] = 16.
-[BACKEND] Generated in 0.5011317729949951 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 3.
-[BACKEND] Generated in 0.5008659362792969 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 9.
-[BACKEND] Generated in 0.5009350776672363 s.
-[BACKEND] Gererating response for Roll 20d6.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [4 + 6 + 3 + 3 + 3 + 6 + 5 + 6 + 2 + 5 + 5 + 5 + 3 + 6 + 2 + 4 + 3 + 4 + 2 + 4] = 81.
-[BACKEND] Generated in 0.5011765956878662 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 4.
-[BACKEND] Generated in 0.5009438991546631 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 13.
-[BACKEND] Generated in 0.5011298656463623 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 7.
-[BACKEND] Generated in 0.5010755062103271 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 3.
-[BACKEND] Generated in 0.5010333061218262 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 2.
-[BACKEND] Generated in 0.5009560585021973 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 2.
-[BACKEND] Generated in 0.5009870529174805 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 13.
-[BACKEND] Generated in 0.5011768341064453 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 11.
-[BACKEND] Generated in 0.5011234283447266 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 12.
-[BACKEND] Generated in 0.5009300708770752 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 6.
-[BACKEND] Generated in 0.5009355545043945 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 14.
-[BACKEND] Generated in 0.5013422966003418 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 19.
-[BACKEND] Generated in 0.5009071826934814 s.
-[BACKEND] Gererating response for Roll d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 2.
-[BACKEND] Generated in 0.5017266273498535 s.
-[BACKEND] Gererating response for Roll 6d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [13 + 10 + 11 + 15 + 20 + 19] = 88.
-[BACKEND] Generated in 0.5009622573852539 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 10.
-[BACKEND] Generated in 0.5010082721710205 s.
-[BACKEND] Gererating response for Roll 6d6.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [5 + 5 + 4 + 2 + 5 + 5] = 26.
-[BACKEND] Generated in 0.5011029243469238 s.
-[BACKEND] Gererating response for Roll 6d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [19 + 8 + 14 + 16 + 15 + 11] = 83.
-[BACKEND] Generated in 0.5010333061218262 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 10.
-[BACKEND] Generated in 0.501248836517334 s.
-[BACKEND] Gererating response for Roll 5d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [16 + 9 + 18 + 13 + 4] = 60.
-[BACKEND] Generated in 0.5007815361022949 s.
-[BACKEND] Gererating response for Roll 2d8.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [6 + 5] = 11.
-[BACKEND] Generated in 0.5009710788726807 s.
-[BACKEND] Gererating response for Roll 6d8.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [8 + 7 + 5 + 7 + 3 + 7] = 37.
-[BACKEND] Generated in 0.5009469985961914 s.
-[BACKEND] Gererating response for Roll 8d6.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [4 + 1 + 3 + 2 + 3 + 4 + 6 + 4] = 27.
-[BACKEND] Generated in 0.5017139911651611 s.
-[BACKEND] Gererating response for Roll d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled 7.
-[BACKEND] Generated in 0.5009291172027588 s.
-[BACKEND] Gererating response for Roll 4d12.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [3 + 4 + 8 + 9] = 24.
-[BACKEND] Generated in 0.500901460647583 s.
-[BACKEND] Gererating response for Roll 12d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [11 + 11 + 15 + 7 + 6 + 20 + 7 + 13 + 17 + 12 + 6 + 1] = 126.
-[BACKEND] Generated in 0.5010342597961426 s.
-[BACKEND] Gererating response for Roll 6d20.
-[BACKEND] GEN: dice_roll
-[BACKEND] Response: I rolled [15 + 1 + 9 + 6 + 4 + 15] = 50.
-[BACKEND] Generated in 0.500974178314209 s.
+[BACKEND] GEN: memory
+[BACKEND] GEN: probability
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: mathematical_solution
+[BACKEND] GEN: adventure
+[BACKEND] GEN: fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: articulation
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: clever_response
+[BACKEND] GEN: joke
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] FALLBACK
+[BACKEND] Response: Hello Mike.
+[BACKEND] Generated in 7.38341212272644 s.

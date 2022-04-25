@@ -1,32 +1,4 @@
 
-[FRONTEND] Respond: Roll 6d6.
-[FRONTEND] Respond: Roll 3d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll 20d6.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll d20.
-[FRONTEND] Respond: Roll 6d20.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll 6d6.
-[FRONTEND] Respond: Roll 6d20.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll 5d20.
-[FRONTEND] Respond: Roll 2d8.
-[FRONTEND] Respond: Roll 6d8.
-[FRONTEND] Respond: Roll 8d6.
-[FRONTEND] Respond: Roll d12.
-[FRONTEND] Respond: Roll 4d12.
-[FRONTEND] Respond: Roll 12d20.
-[FRONTEND] Respond: Roll 6d20.
+[FRONTEND] Respond: Hello tom.
+[FRONTEND] Respond: Murray.
+[FRONTEND] Frontend Closed

@@ -1,23 +1,20 @@
-
 if __name__ == "__main__":
-    from cleverbot import cleverbot
+    from cleverbot import Cleverbot
 else:
-    from .cleverbot import cleverbot
+    from .cleverbot import Cleverbot
     
 from nltk.corpus import stopwords, wordnet
 from nltk.tokenize import word_tokenize
 
 
-# With context and session
-# An ongoing conversation with the first question as "How are you?"
-
-
 online = True
 try:
-    cleverbot("Hello.", ["hi.", "How are you?"], "How are you?")
-except: # ConnectionError:
+    bot = Cleverbot()
+    #cleverbot("Hello.", ["hi.", "How are you?"], "How are you?")
+except ConnectionError as e:
     online = False
 
+    
 def contains(string, list_, wholeWord=False): # Returns true if the words iin the list are anywhere in the string.
     
     if wholeWord: # List item must be a entire word in string.
@@ -58,22 +55,13 @@ def go(inp):
     if not online:
         return False
 
-    n = 0
-    out = ""
+    out = bot.send(inp)
+    out = out.strip(" ")
 
-    while not len(out) and n < 3:
+    if out[-1] != ".":
+        out += "."
+    return out
         
-        out = cleverbot(inp, session="How are you?")
-        out = out.strip(" ")
-
-        try:
-            if out[-1] != ".":
-                out += "."
-            return out
-        
-        except IndexError:
-            continue
-    
 
 def respond(inp):
 
