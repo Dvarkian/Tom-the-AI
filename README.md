@@ -284,7 +284,7 @@ License
 -------
 
     Tom the AI: A compound AI for Linux systems.
-    Copyright (C) 2021  Murray Jones
+    Copyright (C) 2021 by Murray Jones
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

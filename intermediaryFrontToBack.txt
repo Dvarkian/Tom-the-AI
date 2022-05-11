@@ -1,4 +1,2 @@
 
-[FRONTEND] Respond: Hello tom.
-[FRONTEND] Respond: Murray.
-[FRONTEND] Frontend Closed
+[FRONTEND] Respond: Roll d20.

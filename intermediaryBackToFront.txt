@@ -22,6 +22,7 @@
 [BACKEND] Indexing home directory... 38000 files indexed.
 [BACKEND] Indexing home directory... 40000 files indexed.
 [BACKEND] Indexing home directory... 42000 files indexed.
+[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 44000 files indexed.
 [BACKEND] Indexing home directory... 46000 files indexed.
 [BACKEND] Indexing home directory... 48000 files indexed.
@@ -38,7 +39,6 @@
 [BACKEND] Indexing home directory... 70000 files indexed.
 [BACKEND] Indexing home directory... 72000 files indexed.
 [BACKEND] Indexing home directory... 74000 files indexed.
-[LISTENER] Listener Started
 [BACKEND] Indexing home directory... 76000 files indexed.
 [EMOTION] Loaded
 [BACKEND] Indexing home directory... 78000 files indexed.
@@ -104,43 +104,11 @@
 [BACKEND] TELL: Importing objective response cabability.
 [BACKEND] TELL: Importing articulation cabability.
 [BACKEND] TELL: Importing wikipedia cabability.
-[BACKEND] TELL: Importing clever response cabability.
 [BACKEND] TELL: Importing joke cabability.
-[BACKEND] Loaded in 47.01538324356079 s.
+[BACKEND] TELL: Importing clever response cabability.
+[BACKEND] Loaded in 47.862881898880005 s.
 [BACKEND] Ready
-[BACKEND] Gererating response for Hello tom.
+[BACKEND] Gererating response for Roll d20.
 [BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] Response: What's your name?.
-[BACKEND] Generated in 1.3363890647888184 s.
-[BACKEND] Gererating response for Murray.
-[BACKEND] GEN: dice_roll
-[BACKEND] GEN: memory
-[BACKEND] GEN: probability
-[BACKEND] GEN: script
-[BACKEND] GEN: trivia
-[BACKEND] GEN: mathematical_solution
-[BACKEND] GEN: adventure
-[BACKEND] GEN: fun_fact
-[BACKEND] GEN: betty
-[BACKEND] GEN: objective_response
-[BACKEND] GEN: articulation
-[BACKEND] GEN: wikipedia
-[BACKEND] GEN: clever_response
-[BACKEND] GEN: joke
-[BACKEND] GEN: 
-[BACKEND] Response error: invalid syntax (<string>, line 1) in 
-[BACKEND] FALLBACK
-[BACKEND] Response: Hello Mike.
-[BACKEND] Generated in 7.38341212272644 s.
+[BACKEND] Response: I rolled 20.
+[BACKEND] Generated in 0.5009355545043945 s.
