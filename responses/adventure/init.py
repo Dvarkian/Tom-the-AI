@@ -6,7 +6,10 @@ Apache License, Version 2.0 as detailed in the accompanying README.txt.
 """
 def load_advent_dat(data):
     import os
-    from .data import parse
+    try:
+        from .data import parse
+    except:
+        from data import parse
 
     datapath = os.path.join(os.path.dirname(__file__), 'advent.dat')
     with open(datapath, 'r', encoding='ascii') as datafile:
@@ -21,9 +24,13 @@ def play(seed=None):
     """
     global _game
 
-    from .game import Game
-    from .prompt import install_words
-
+    try:
+        from .game import Game
+        from .prompt import install_words
+    except:
+        from game import Game
+        from prompt import install_words
+        
     _game = Game(seed)
     load_advent_dat(_game)
     install_words(_game)
@@ -33,8 +40,12 @@ def play(seed=None):
 def resume(savefile, quiet=False):
     global _game
 
-    from .game import Game
-    from .prompt import install_words
+    try:
+        from .game import Game
+        from .prompt import install_words
+    except:
+        from game import Game
+        from prompt import install_words
 
     _game = Game.resume(savefile)
     install_words(_game)

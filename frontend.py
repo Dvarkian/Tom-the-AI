@@ -50,6 +50,8 @@ def ignoreWarning(): # Provides aa warning telling the user not to ignore warnin
 
 os.chdir("/".join(__file__.split("/")[:-1]))
 
+sys.path = [dir_]
+
 if "\\" in os.getcwd(): # Recognises windows machines by use of \\ in their file paths.
     platform = "windows"
     

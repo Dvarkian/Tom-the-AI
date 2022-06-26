@@ -84,6 +84,7 @@ def intort(): # Recieve data from the frontend.
 
 retort("Backend Started")
 
+sys.path = []
 
 platform = "unknown" # Placeholder for platform
 dir_ = "" # Placehoolder for working directory.

@@ -11,8 +11,13 @@ import re
 import readline
 from sys import executable, stdout
 from time import sleep
-from .init import load_advent_dat
-from .game import Game
+
+if __name__ != "__main__":
+    from .init import load_advent_dat
+    from .game import Game
+else:
+    from init import load_advent_dat
+    from game import Game
 
 BAUD = 1200
 
@@ -33,7 +38,7 @@ def move(line):
     if not gameVar.is_finished:
         words = re.findall(r'\w+', line)
         if words:
-            out = gameVar.do_command(words).lower().capitalize()
+            out = gameVar.do_command(words)
 
             out = out.replace("\n", " ")
 
@@ -48,7 +53,7 @@ def move(line):
                 out = out.replace("  ", " ")
                 
                 for sent in out.split(". "):
-                    sent = sent.capitalize() + ". "
+                    sent = sent + ". " # .capitalize()
                     result += sent
                 
                 return result
@@ -73,7 +78,7 @@ def start():
         load_advent_dat(gameVar)
         gameVar.start()
         out = gameVar.output
-        out = out.capitalize()
+        #out = out.capitalize()
         return out
     else:
         gameVar = Game.resume(args.savefile)
@@ -100,10 +105,10 @@ def respond(inp):
         
 
 if __name__ == "__main__":
-    start()
+    print(start(), end="")
 
     while True:
         try:
-            print(move(input("> ")))
+            print(move(input("> ")), end="\n\n")
         except EOFError:
             pass

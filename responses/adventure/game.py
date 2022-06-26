@@ -15,8 +15,12 @@ import pickle
 import random
 import zlib
 from operator import attrgetter
-from .data import Data
-from .model import Room, Message, Dwarf, Pirate
+try:
+    from .data import Data
+    from .model import Room, Message, Dwarf, Pirate
+except:
+    from data import Data
+    from model import Room, Message, Dwarf, Pirate
 
 YESNO_ANSWERS = {'y': True, 'yes': True, 'n': False, 'no': False}
 
