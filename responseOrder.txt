@@ -1,14 +1,11 @@
-dice_roll
 memory
-probability
 script
 trivia
-mathematical_solution
-adventure
 fun_fact
 betty
 objective_response
-articulation
 wikipedia
 joke
 clever_response
+
+

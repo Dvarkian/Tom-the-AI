@@ -1,0 +1,5 @@
+
+[FRONTEND] Respond: Hello tom.
+[FRONTEND] Respond: M name is murray.
+[FRONTEND] Respond: What is pluto?
+[FRONTEND] Respond: Tell me a joke.

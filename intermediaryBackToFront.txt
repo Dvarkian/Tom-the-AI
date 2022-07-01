@@ -1,0 +1,160 @@
+
+[BACKEND] Backend Started
+[BACKEND] Loading
+[BACKEND] Indexing home directory... 2000 files indexed.
+[BACKEND] Indexing home directory... 4000 files indexed.
+[BACKEND] Indexing home directory... 6000 files indexed.
+[BACKEND] Indexing home directory... 8000 files indexed.
+[BACKEND] Indexing home directory... 10000 files indexed.
+[BACKEND] Indexing home directory... 12000 files indexed.
+[BACKEND] Indexing home directory... 14000 files indexed.
+[BACKEND] Indexing home directory... 16000 files indexed.
+[BACKEND] Indexing home directory... 18000 files indexed.
+[BACKEND] Indexing home directory... 20000 files indexed.
+[BACKEND] Indexing home directory... 22000 files indexed.
+[BACKEND] Indexing home directory... 24000 files indexed.
+[BACKEND] Indexing home directory... 26000 files indexed.
+[BACKEND] Indexing home directory... 28000 files indexed.
+[BACKEND] Indexing home directory... 30000 files indexed.
+[BACKEND] Indexing home directory... 32000 files indexed.
+[BACKEND] Indexing home directory... 34000 files indexed.
+[BACKEND] Indexing home directory... 36000 files indexed.
+[BACKEND] Indexing home directory... 38000 files indexed.
+[BACKEND] Indexing home directory... 40000 files indexed.
+[BACKEND] Indexing home directory... 42000 files indexed.
+[BACKEND] Indexing home directory... 44000 files indexed.
+[BACKEND] Indexing home directory... 46000 files indexed.
+[BACKEND] Indexing home directory... 48000 files indexed.
+[BACKEND] Indexing home directory... 50000 files indexed.
+[BACKEND] Indexing home directory... 52000 files indexed.
+[BACKEND] Indexing home directory... 54000 files indexed.
+[BACKEND] Indexing home directory... 56000 files indexed.
+[BACKEND] Indexing home directory... 58000 files indexed.
+[BACKEND] Indexing home directory... 60000 files indexed.
+[BACKEND] Indexing home directory... 62000 files indexed.
+[BACKEND] Indexing home directory... 64000 files indexed.
+[BACKEND] Indexing home directory... 66000 files indexed.
+[BACKEND] Indexing home directory... 68000 files indexed.
+[BACKEND] Indexing home directory... 70000 files indexed.
+[BACKEND] Indexing home directory... 72000 files indexed.
+[BACKEND] Indexing home directory... 74000 files indexed.
+[BACKEND] Indexing home directory... 76000 files indexed.
+[BACKEND] Indexing home directory... 78000 files indexed.
+[BACKEND] Indexing home directory... 80000 files indexed.
+[BACKEND] Indexing home directory... 82000 files indexed.
+[BACKEND] Indexing home directory... 84000 files indexed.
+[BACKEND] Indexing home directory... 86000 files indexed.
+[BACKEND] Indexing home directory... 88000 files indexed.
+[BACKEND] Indexing home directory... 90000 files indexed.
+[BACKEND] Indexing home directory... 92000 files indexed.
+[BACKEND] Indexing home directory... 94000 files indexed.
+[BACKEND] Indexing home directory... 96000 files indexed.
+[BACKEND] Indexing home directory... 98000 files indexed.
+[BACKEND] Indexing home directory... 100000 files indexed.
+[BACKEND] Indexing home directory... 102000 files indexed.
+[BACKEND] Indexing home directory... 104000 files indexed.
+[BACKEND] Indexing home directory... 106000 files indexed.
+[BACKEND] Indexing home directory... 108000 files indexed.
+[BACKEND] Indexing home directory... 110000 files indexed.
+[BACKEND] Indexing home directory... 112000 files indexed.
+[BACKEND] Indexing home directory... 114000 files indexed.
+[BACKEND] Indexing home directory... 116000 files indexed.
+[BACKEND] Indexing home directory... 118000 files indexed.
+[BACKEND] Indexing home directory... 120000 files indexed.
+[BACKEND] Indexing home directory... 122000 files indexed.
+[BACKEND] Indexing home directory... 124000 files indexed.
+[BACKEND] Indexing home directory... 126000 files indexed.
+[BACKEND] Indexing home directory... 128000 files indexed.
+[BACKEND] Indexing home directory... 130000 files indexed.
+[BACKEND] Indexing home directory... 132000 files indexed.
+[BACKEND] Indexing home directory... 134000 files indexed.
+[BACKEND] Indexing home directory... 136000 files indexed.
+[BACKEND] Indexing home directory... 138000 files indexed.
+[BACKEND] Indexing home directory... 140000 files indexed.
+[BACKEND] Indexing home directory... 142000 files indexed.
+[BACKEND] Indexing home directory... 144000 files indexed.
+[BACKEND] Indexing home directory... 146000 files indexed.
+[BACKEND] Indexing home directory... 148000 files indexed.
+[BACKEND] Indexing home directory... 150000 files indexed.
+[BACKEND] Indexing home directory... 152000 files indexed.
+[BACKEND] Indexing home directory... 154000 files indexed.
+[BACKEND] Indexing home directory... 156000 files indexed.
+[BACKEND] Indexing home directory... 158000 files indexed.
+[BACKEND] Indexing home directory... 160000 files indexed.
+[BACKEND] Indexing home directory... 162000 files indexed.
+[BACKEND] Indexing home directory... 164000 files indexed.
+[BACKEND] Indexing home directory... 166000 files indexed.
+[BACKEND] Indexing home directory... 168000 files indexed.
+[BACKEND] Indexing home directory... 170000 files indexed.
+[BACKEND] Indexing home directory... 172000 files indexed.
+[BACKEND] Indexing home directory... 174000 files indexed.
+[BACKEND] Indexing home directory... 176000 files indexed.
+[BACKEND] Indexing home directory... 178000 files indexed.
+[BACKEND] Indexing home directory... 180000 files indexed.
+[BACKEND] TELL: Importing memory cabability.
+[BACKEND] TELL: Importing script cabability.
+[BACKEND] TELL: Importing trivia cabability.
+[BACKEND] TELL: Importing adventure cabability.
+[BACKEND] TELL: Importing betty cabability.
+[BACKEND] TELL: Importing objective response cabability.
+[BACKEND] TELL: Importing wikipedia cabability.
+[BACKEND] TELL: Importing joke cabability.
+[BACKEND] TELL: Importing clever response cabability.
+[BACKEND] Loaded in 53.77646040916443 s.
+[BACKEND] Ready
+[BACKEND] Gererating response for Hello tom.
+[BACKEND] GEN: memory
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: fun_fact
+[BACKEND] Response error: name 'fun_fact' is not defined in fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: joke
+[BACKEND] GEN: clever_response
+[BACKEND] Response: What's your name?.
+[BACKEND] Generated in 8.385237693786621 s.
+[BACKEND] Gererating response for M name is murray.
+[BACKEND] GEN: memory
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: fun_fact
+[BACKEND] Response error: name 'fun_fact' is not defined in fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: joke
+[BACKEND] GEN: clever_response
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] GEN: 
+[BACKEND] Response error: invalid syntax (<string>, line 1) in 
+[BACKEND] FALLBACK
+[BACKEND] Response: Hello Murray.
+[BACKEND] Generated in 2.0061817169189453 s.
+[BACKEND] Gererating response for What is pluto?
+[BACKEND] GEN: memory
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: fun_fact
+[BACKEND] Response error: name 'fun_fact' is not defined in fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] Response: According to solarsystem.nasa.gov ...
+We were lost. None of us knew where we were. Then Harry starts feeling around on all the trees, and he says, "I got it! We're on Pluto." I say, "Harry, how can ya tell?" And he says, "From the bark, you dummies.
+[BACKEND] Generated in 21.468385457992554 s.
+[BACKEND] Gererating response for Tell me a joke.
+[BACKEND] GEN: memory
+[BACKEND] GEN: script
+[BACKEND] GEN: trivia
+[BACKEND] GEN: fun_fact
+[BACKEND] Response error: name 'fun_fact' is not defined in fun_fact
+[BACKEND] GEN: betty
+[BACKEND] GEN: objective_response
+[BACKEND] GEN: wikipedia
+[BACKEND] GEN: joke
+[BACKEND] Response: A programmer crashes a car at the bottom of a hill, a bystander asks what happened, he says "No idea. Let's push it back up and try again".
+[BACKEND] Generated in 0.643012523651123 s.
