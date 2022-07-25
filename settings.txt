@@ -35,5 +35,5 @@
  'adventureTime': 18,
  'cam': 'off',
  'estloadTime': 68.67584204673767,
- 'windowOpen': True,
+ 'windowOpen': False,
  'Time': 18}
