@@ -1,4 +1,4 @@
-Tom the AI (v1.1.1)
+Tom the AI (v1.2)
 ===================
 
 Tom is an open source compound artificial intellegence software for Linux systems, built using a series of independent response modules to generate replies to any input. 
@@ -9,49 +9,11 @@ Tom uses natural language processing to determine which response module is best 
 
 Note: Tom is tested on Ubuntu 22.04. It *should* work fine on other Linux systems, but some minor tweaking may be required to the method of installling dependencies.
 
+
 By Analogy
 ----------
 
 Tom the AI is designed as a Linux alternative to software such as Apple's Siri, or Microsoft's Cortana.
-
-
-Set Up
-------
-
-**Step 1 - Update repositories:** 
-
-Update apt package repositories using `sudo apt update` to ensure that the apt package manager has access to the latest versions of the below dependencies.
-
-**Step 2 - Install APT dependencies:** 
-
-First, install python by running `sudo apt install python3.9` in a terminal. Tom is tested on python 3.9, but any newer version should (probably) also work just fine.
-
-Next, install the latest version of VLC Media player using `sudo apt install vlc`, then install howdoi with `sudo apt install howdoi`.
-
-**Step 3 - Download Tom**: 
-
-Download Tom by cloning the GitHub repository into your home folder using `git clone https://github.com/Mblizzard/Tom-the-AI`.
-
-**Step 4 - Install Python dependencies:** 
-
-Open a terminal inside Tom's application folder, or navigate using `cd ~/Tom-the-AI/`. Now run `sudo pip3 install -r requirements.txt`. Some systems may use `pip` in place of `pip3`.
-
-Next, we need to download the required NLTK libraries by running the following code in a python shell:
-
-```python
->>> import nltk
->>> nltk.download('all')
-```
-
-**Step 5 - Running Tom:** 
-
-Go ahead and run `python3.9 ~/Tom-the-AI/frontend.py`. Tom will boot up, and after a minute or so of loading, you'll be ready to go! If you feel inclined, go ahead and make a desktop launcher of this command, link Tom into your Application Menu, or create a dock shortcut.
-
-
-Mission
--------
-
-The mission of Tom is to provide an open source compound AI for which anyone can program and contribute response modules, expanding Tom's capabilities to create a useful and entertaining artificial intelligence software.
 
 
 Features
@@ -202,6 +164,45 @@ Passive response capabilities can activate without direct user input. All passiv
 
 
 This is a fair representation of Tom's capabilities as they currently stand. See the following section on contributing for a guide of how to create your own response modules for Tom, and expand upon the above abilities.
+
+
+Set Up
+------
+
+**Step 1 - Update repositories:** 
+
+Update apt package repositories using `sudo apt update` to ensure that the apt package manager has access to the latest versions of the below dependencies.
+
+**Step 2 - Install APT dependencies:** 
+
+First, install python by running `sudo apt install python3.10` in a terminal. Tom is tested on python 3.10, but any newer version should (probably) also work just fine.
+
+Next, install the latest version of VLC Media player using `sudo apt install vlc`, then install howdoi with `sudo apt install howdoi`.
+
+**Step 3 - Download Tom**: 
+
+Download Tom by cloning the GitHub repository into your home folder using `git clone https://github.com/Mblizzard/Tom-the-AI`.
+
+**Step 4 - Install Python dependencies:** 
+
+Open a terminal inside Tom's application folder, or navigate using `cd ~/Tom-the-AI/`. Now run `sudo pip3 install -r requirements.txt`. Some systems may use `pip` in place of `pip3`.
+
+Next, we need to download the required NLTK libraries by running the following code in a python shell:
+
+```python
+>>> import nltk
+>>> nltk.download('all')
+```
+
+**Step 5 - Running Tom:** 
+
+Go ahead and run `python3.10 ~/Tom-the-AI/frontend.py`. Tom will boot up, and after a minute or so of loading, you'll be ready to go! If you feel inclined, go ahead and make a desktop launcher of this command, link Tom into your Application Menu, or create a dock shortcut.
+
+
+Mission
+-------
+
+The mission of Tom is to provide an open source compound AI for which anyone can program and contribute response modules, expanding Tom's capabilities to create a useful and entertaining artificial intelligence software.
 
 
 Contributing
