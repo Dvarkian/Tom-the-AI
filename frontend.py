@@ -229,9 +229,9 @@ intermediary.close()
 # Start the backend and lisener processen in the appropriate pyhton version
 # These can satart loading whildst the froonntenf continues loading.
 if platform == "linux":
-    backendProcess = Popen(["python3.9", dir_ + "backend.py"], stdout=PIPE, stderr=PIPE)
-    listenerProcess = Popen(["python3.9", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
-    emotionProcess = Popen(["python3.9", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
+    backendProcess = Popen(["python3.10", dir_ + "backend.py"], stdout=PIPE, stderr=PIPE)
+    listenerProcess = Popen(["python3.10", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)
+    emotionProcess = Popen(["python3.10", dir_ + "emotion.py"], stdout=PIPE, stderr=PIPE)
 elif platform == "windows":
     backendProcess = Popen(["py", "-3.6", dir_ + "backend.py"], stdout=PIPE, stderr=PIPE)
     listenerProcess = Popen(["py", "-3.6", dir_ + "listener.py"], stdout=PIPE, stderr=PIPE)

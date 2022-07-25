@@ -34,6 +34,6 @@
  'probabilityTime': 18,
  'adventureTime': 18,
  'cam': 'off',
- 'estloadTime': 68.67584204673767,
- 'windowOpen': False,
+ 'estloadTime': 22.957841396331787,
+ 'windowOpen': True,
  'Time': 18}
